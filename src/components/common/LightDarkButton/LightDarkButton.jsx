@@ -4,7 +4,7 @@ import classes from "./LightDarkButton.module.css";
 const LightDarkButton = () => {
   return (
     <>
-      <div onClick={toggleDarkMode} className={classes.toggleWrapper}>
+      <div className={classes.toggleWrapper}>
         <input
           type="checkbox"
           className={`${classes.dn} ${classes.input}`}
