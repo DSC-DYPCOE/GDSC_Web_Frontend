@@ -1,0 +1,170 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100vw;
+  z-index: 5;
+}
+.inner_navbar {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.brand_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+}
+
+.brand_title {
+  font-size: 1.5rem;
+  font-weight: 750;
+}
+
+.navbar_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar_item .link_text {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 550;
+  padding: 16px 8px 16px 8px;
+}
+
+.navbar_item a:hover,
+.navbar_item a:active {
+  background: linear-gradient(#ce9ffc, #a582f7, #7367f0);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.hamburger {
+  align-items: center;
+  display: none;
+  height: 64px;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 64px;
+  right: 40px;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+.links {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .brand_title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inner_navbar {
+    padding: 0;
+  }
+  .brand_title {
+    display: none;
+  }
+  .navbar_items {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .navbar_mitems {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    transition: ease-out;
+    transition-delay: 100ms;
+    transition-duration: 1000ms;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 66.664px;
+    padding-top: 80px;
+    background-color: rgb(0, 0, 0);
+  }
+  .navbar_item .link_text {
+    font-size: 8vw;
+    color: #fff;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

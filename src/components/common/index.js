@@ -5,3 +5,4 @@ export { default as Input } from "./Input/Input";
 export { default as Popup } from "./Popup/Popup";
 export { default as ProjectCard } from "./ProjectCard/ProjectCard";
 export { default as TeamCard } from "./TeamCard/TeamCard";
+export { default as LightDarkButton } from "./LightDarkButton/LightDarkButton";
