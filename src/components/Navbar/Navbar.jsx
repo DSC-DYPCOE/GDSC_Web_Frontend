@@ -1,118 +1,69 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import classes from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.svg";
-import { useState } from "react";
+import lightLogo from "../../assets/nav_logo_light.png";
+import darkLogo from "../../assets/nav_logo_dark.png";
 import { LightDarkButton } from "../common";
+import { ThemeContext } from '../../App'
+import info from './nav_info'
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const theme = useContext(ThemeContext);
+  const [isOpen, setisOpen] = useState(false);
+  const collapse = () => {
+    if (isOpen) {
+      setisOpen(false)
+    }
+    else {
+      setisOpen(true)
+    }
+  }
+
 
   return (
     <>
-      <nav className={classes.navbar}>
+      <nav className={`${classes.navbar} ${theme.theme === "light" ? classes.light : classes.dark}`}>
         <div className={classes.inner_navbar}>
           <NavLink to="/">
             <div className={classes.brand}>
               <div className={classes.brand_logo}>
-                <img src={logo} alt="logo" className={classes.logo} />
+                <img src={theme.theme === "light" ? lightLogo : darkLogo} alt="logo" className={classes.logo} />
               </div>
             </div>
           </NavLink>
-          <ul
-            className={
-              active
-                ? `${classes.navbar_items} ${classes.navbar_mitems}`
-                : `${classes.navbar_items}`
-            }
-          >
-            <li
-              className={`${classes.navbar_item} `}
-              onClick={() => {
-                setActive((prevValue) => !prevValue);
-              }}
-            >
-              <NavLink to="/" className={classes.link_text}>
-                Home
-              </NavLink>
-            </li>
-            <li
-              className={`${classes.navbar_item} `}
-              onClick={() => {
-                setActive((prevValue) => !prevValue);
-              }}
-            >
-              <NavLink to="#overview" className={classes.link_text}>
-                Overview
-              </NavLink>
-            </li>
-            <li
-              className={`${classes.navbar_item} `}
-              onClick={() => {
-                setActive((prevValue) => !prevValue);
-              }}
-            >
-              <NavLink to="/projects" className={classes.link_text}>
-                Projects
-              </NavLink>
-            </li>
-            <li
-              className={`${classes.navbar_item} `}
-              onClick={() => {
-                setActive((prevValue) => !prevValue);
-              }}
-            >
-              <NavLink to="#technologies" className={classes.link_text}>
-                Technologies
-              </NavLink>
-            </li>
-            <li
-              className={`${classes.navbar_item} `}
-              onClick={() => {
-                setActive((prevValue) => !prevValue);
-              }}
-            >
-              <NavLink to="/events" className={classes.link_text}>
-                Events
-              </NavLink>
-            </li>
-            <li
-              className={`${classes.navbar_item} `}
-              onClick={() => {
-                setActive((prevValue) => !prevValue);
-              }}
-            >
-              <NavLink to="/team" className={classes.link_text}>
-                Team
-              </NavLink>
-            </li>
-            <li
-              className={`${classes.navbar_item} `}
-              onClick={() => {
-                setActive((prevValue) => !prevValue);
-              }}
-            >
-              <NavLink to="/about" className={classes.link_text}>
-                About
-              </NavLink>
-            </li>
-            <li
-              className={`${classes.navbar_item} `}
-              onClick={() => {
-                setActive((prevValue) => !prevValue);
-              }}
-            >
-              <NavLink to="/contact" className={classes.link_text}>
-                Contact Us
-              </NavLink>
-            </li>
-            <li className={classes.links}></li>
+          <div className={`${classes.menu} ${isOpen ? classes.isOpen : ''}`}>
+            <ul
+              className={
+                active
+                  ? `${classes.navbar_items} ${classes.navbar_mitems}`
+                  : `${classes.navbar_items}`
+              }>
+
+              {info.map((currentValue)=>
+
+              <li
+                className={`${classes.navbar_item} `}
+                onClick={() => {
+                  setActive((prevValue) => !prevValue);
+                }}
+              >
+                <NavLink to={currentValue.to} className={({ isActive }) => (isActive ? `${classes.active} ${classes.link_text}` : `${classes.link_text}`)}>
+                  <span className={`material-symbols-outlined ${classes.icon}`}>
+                    {currentValue.iconName}
+                  </span>
+                  {currentValue.name}
+                </NavLink>
+              </li>
+              )}
+            </ul>
             <LightDarkButton />
-          </ul>
+          </div>
           <div
             className={classes.hamburger}
             onClick={() => {
               setActive((prevValue) => !prevValue);
+              collapse();
             }}
           >
             <svg

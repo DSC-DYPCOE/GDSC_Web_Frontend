@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../../App";
 import classes from "./LightDarkButton.module.css";
 
+
 const LightDarkButton = () => {
+  const theme = useContext(ThemeContext)
+  const changeTheme = () => {
+    console.log(theme.theme)
+    theme.toggleTheme();
+  }
   return (
     <>
       <div className={classes.toggleWrapper}>
         <input
+           onClick={changeTheme}
           type="checkbox"
           className={`${classes.dn} ${classes.input}`}
           id="dn"
