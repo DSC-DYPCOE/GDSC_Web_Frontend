@@ -46,6 +46,7 @@ const Navbar = () => {
                 className={`${classes.navbar_item} `}
                 onClick={() => {
                   setActive((prevValue) => !prevValue);
+                  collapse();
                 }}
               >
                 <NavLink to={currentValue.to} className={({ isActive }) => (isActive ? `${classes.active} ${classes.link_text}` : `${classes.link_text}`)}>
