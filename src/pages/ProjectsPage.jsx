@@ -1,7 +1,11 @@
 import React from "react";
-
+import ProjectCard from "../components/common/ProjectCard/ProjectCard";
 const ProjectsPage = () => {
-  return <div>ProjectsPage</div>;
+  return (
+    <>
+      <ProjectCard />
+    </>
+  );
 };
 
 export default ProjectsPage;

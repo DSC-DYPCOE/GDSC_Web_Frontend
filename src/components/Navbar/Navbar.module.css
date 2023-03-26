@@ -38,6 +38,7 @@
   justify-content: center;
   gap: 10px;
   padding: 8px;
+  /* width: 30%; */
 }
 
 .brand_logo {
@@ -233,7 +234,12 @@
     font-size: 16px;
   }
 
+  .logo{
+    width: 250px;
+  }
+
   .hamburger {
+    margin-left: 10px;
     display: block;
     transform: scale(0.75);
   }
@@ -251,6 +257,7 @@
     padding: 100px 10px;
     transform: translate(100vw);
     transition: .5s;
+    background: #fff;
   }
 
   .menu.isOpen{
@@ -259,7 +266,7 @@
 
   .navbar.navbar.dark .menu {
     background-color: #242526;
-    transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 300ms cubic-bezier(0.455,  0.03, 0.515, 0.955);
   }
 
   .navbar_items {
