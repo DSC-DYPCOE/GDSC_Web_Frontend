@@ -13,7 +13,7 @@ const Button = ({
   return (
     <>
       <button
-        style={{ padding: padding, fontSize: fontSize, "--hover-color": color }}
+        style={{ padding: padding, fontSize: fontSize, "--hover-color": color, cursor: "pointer" }}
         className={classes.button}
         onClick={onClick}
         disabled={disabled}
