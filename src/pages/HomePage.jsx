@@ -1,7 +1,11 @@
 import React from "react";
+import HomeSection from "../HomeSection/HomeSection";
+
 
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return(
+    <HomeSection />
+  );
 };
 
 export default Homepage;

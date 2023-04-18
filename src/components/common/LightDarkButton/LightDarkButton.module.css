@@ -16,6 +16,7 @@
   background-color: #83d8ff;
   border-radius: 84px;
   transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform: scale(0.75);
 }
 
 .toggle__handler {
