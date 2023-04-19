@@ -1,7 +1,8 @@
 import React from "react";
+import Chatbotfolder from "../components/common/chatbot/Chatbotfolder";
 
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return <Chatbotfolder />;
 };
 
 export default Homepage;
