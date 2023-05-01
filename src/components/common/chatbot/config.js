@@ -5,6 +5,7 @@ import {Hellomsgw, Allmem, Leaddo} from './differentopt.jsx';
 import group from './Group_268.svg'
 import user from './user.png'
 import './css/chatbot.css'
+import LogoSVG from './logosvg';
 
 const leadwork = ["Start a club","Host workshops","Build projects","Colab with others"];
 const who = ["Faculty", "Leads" , "Coordinators", "Members"];
@@ -15,7 +16,8 @@ const config = {
   customComponents: {
     // Replaces the default header
    header: () => <div style={{width:"99%" , padding:"20px 20px"}}>
-    <img src={group} className="topone"/>
+    {/* <img src={group} className="topone"/> */}
+    <LogoSVG />
     <hr></hr>
     </div>,
    // Replaces the default bot avatar

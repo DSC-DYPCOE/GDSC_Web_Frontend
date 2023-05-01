@@ -7,7 +7,6 @@ const Homepage = () => {
   return (
     <>
       <HomeSection />
-      <Chatbotfolder />;
     </>
   );
 };
