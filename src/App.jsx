@@ -13,6 +13,8 @@ import {
   AboutPage,
 } from "./pages";
 import { Navbar, Footer } from "./components/index";
+import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
+import LogoSVG from "./components/common/chatbot/logosvg";
 
 export const ThemeContext = createContext("light")
 
@@ -41,7 +43,9 @@ const App = () => {
           <Route path="/testing" element={<TestingPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        <Chatbotfolder />
         <Footer />
+        <LogoSVG />
       </ThemeContext.Provider>
     </>
   );

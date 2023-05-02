@@ -16,7 +16,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100vw;
   transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  z-index: 10;
+  z-index: 2;
 }
 
 .navbar.dark {
@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  z-index: 1000000;
+  z-index: 2;
 }
 
 .brand {
@@ -60,7 +60,7 @@
 .menu {
   display: flex;
   /* background-color: #fff; */
-  z-index: 5;
+  z-index: 2;
 }
 
 .navbar_items {
@@ -116,7 +116,7 @@
   position: absolute;
   width: 64px;
   right: 40px;
-  z-index: 100;
+  z-index: 4;
 }
 
 .ham {
@@ -185,51 +185,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  /* .inner_navbar {
-    padding: 0;
-  }
-  .brand_title {
-    display: none;
-  }
-  .navbar_items {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: center;
-  }
-  .navbar_mitems {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    text-align: center;
-    transition: ease-out;
-    transition-delay: 100ms;
-    transition-duration: 1000ms;
-    position: absolute;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 66.664px;
-    padding-top: 80px;
-    background-color: rgb(0, 0, 0);
-  }
-  .navbar_item .link_text {
-    font-size: 8vw;
-    color: #fff;
-  }
-  .links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 
   html {
     font-size: 16px;
@@ -240,6 +195,7 @@
   }
 
   .hamburger {
+
     margin-left: 10px;
     display: block;
     transform: scale(0.75);
@@ -248,7 +204,7 @@
   .menu {
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 4;
     right: 0;
     width: 80vw;
     max-width: 400px;
