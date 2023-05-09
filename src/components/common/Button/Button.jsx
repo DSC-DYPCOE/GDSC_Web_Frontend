@@ -10,11 +10,13 @@ const Button = ({
   fontSize = "17px",
   color = "#39bda7",
   margin = "",
+  borderRadius = "",
+  bgColor= "",
 }) => {
   return (
     <>
       <button
-        style={{ padding: padding, fontSize: fontSize, "--hover-color": color, cursor: "pointer", margin: margin, }}
+        style={{ padding: padding, backgroundColor: bgColor, borderRadius:borderRadius, fontSize: fontSize, "--hover-color": color, cursor: "pointer", margin: margin, }}
         className={classes.button}
         onClick={onClick}
         disabled={disabled}
