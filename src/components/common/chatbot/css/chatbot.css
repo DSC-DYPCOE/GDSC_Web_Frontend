@@ -377,6 +377,7 @@
   /* display: none; */
   position: fixed;
   opacity: 0;
+  pointer-events: none;
   bottom: 90px;
   right: 30px;
   animation-name: slidebotA;
@@ -389,6 +390,7 @@
   opacity: 1;
   right: 30px;
   bottom: 90px;
+  pointer-events: visible;
   animation-name: slidebot;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;

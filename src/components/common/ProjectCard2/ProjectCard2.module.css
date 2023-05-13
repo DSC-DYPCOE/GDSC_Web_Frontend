@@ -11,12 +11,17 @@
 }
 
 
-.tag{
+.tags{
     position: absolute;
     float: right;
     width: fit-content;
     top: 0%;
+    display: flex;
     right: 5%;
+    align-items: center;
+    gap: 10px;
+}
+.tag{
     padding: 5px 10px;
     border-radius: 5px;
     transform: translate(0%, -50%);
@@ -36,11 +41,15 @@
     border-radius: 20px 20px 0 0;
     overflow: hidden;
     box-shadow: 0 2px 5px #00000042;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 400px; */
 }
 
 .imgDiv img{
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
 }
 
 .infoDiv{

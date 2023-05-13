@@ -13,8 +13,8 @@ let info = [
     },
     {
         projectName: "Animating Buttons",
-        authors: ["Om Gawande"],
-        tagImg: [img1],
+        authors: ["Om Gawande", "Palash Rambhia",],
+        tagImg: [img1, img1, img1],
         tags: ["Web Development, ", "Open Source"],
         languages: ["HTML, ", "Css, ", "JS, ", "ReactJs"],
         link: "",

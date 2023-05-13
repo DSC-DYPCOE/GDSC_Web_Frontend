@@ -1,7 +1,10 @@
 import React from "react";
+import EventCard from "../components/common/EventsCard/EventCard";
 
 const EventsPage = () => {
-  return <div>EventsPage</div>;
+  return(
+    <EventCard />
+  )
 };
 
 export default EventsPage;
