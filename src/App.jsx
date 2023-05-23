@@ -13,6 +13,7 @@ import {
   AboutPage,
 } from "./pages";
 import { Navbar, Footer } from "./components/index";
+import { Page404 } from "./pages/Page404";
 
 const App = () => {
   return (
@@ -31,7 +32,7 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/testing" element={<TestingPage />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />
     </>
