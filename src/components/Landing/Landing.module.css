@@ -1,0 +1,49 @@
+.cubes {
+    position: absolute;
+    /* top: 10%; */
+    /* left: 50%; */
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* display: none; */
+}
+
+.mainContainer {
+    height: 95vh;
+    width: 100%;
+    /* background-color: aqua; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mainLockup {
+    /* height: 40%; */
+    /* border: red 2px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+h3 {
+    color: #6f6f6f;
+}
+
+
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .mainLockup {
+        margin-top: -50px;
+    }
+}
