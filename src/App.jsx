@@ -5,20 +5,18 @@ import {
   EventsPage,
   ContactPage,
   LoginSignupPage,
-  NotFoundPage,
   ProjectsPage,
   TeamPage,
   IndividualProjectPage,
   TestingPage,
   AboutPage,
+  // Page404,
 } from "./pages";
+import Page404 from "./pages/Page404";
 import { Navbar, Footer } from "./components/index";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
-import LogoSVG from "./components/common/chatbot/logosvg";
 
 export const ThemeContext = createContext("light")
-
-
 const App = () => {
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
@@ -41,11 +39,10 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/testing" element={<TestingPage />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
         <Chatbotfolder />
         <Footer />
-        <LogoSVG />
       </ThemeContext.Provider>
     </>
   );

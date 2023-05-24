@@ -6,7 +6,7 @@ const EventCard = ({current}) => {
   return (
     <div className={classes.main} style={{"--color": current.color,}}>
       <div className={classes.container}>
-        <div className={classes.imgDiv}><img src={current.img}/></div>
+        <div className={classes.imgDiv}><img alt="" src={current.img}/></div>
         <div className={classes.info}>
           <h2>{current.eventName}</h2>
           <p>{current.date}</p>  
