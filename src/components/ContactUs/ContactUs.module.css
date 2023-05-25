@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    /* background-color: #000000; */
 }
 
 .emailtop {
@@ -28,7 +29,7 @@
 }
 
 .bg_only {
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     right: 3%;
     top: 25vw;
@@ -82,18 +83,18 @@
 .greenbg {
     position: absolute;
     left: 0%;
-    margin-top: 50%;
+    margin-top: 57%;
 }
 
 .yellowbg {
     position: absolute;
     right: 0%;
-    margin-bottom: -70%;
+    top:70.6vw;
 }
 
 .insisemail{
-    margin-top: 70px;
-    z-index: 8;
+    margin-top: 11vw;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,11 +210,19 @@ border-radius: 10px;
   /* responsive */
   @media screen and (max-width:850px){
     .emailtop {
-        top: 55vw;
+        top: 69vw;
+    }
+
+    .insisemail{
+        margin-top: 18vw;
+    }
+
+    .pques{
+        color: #4285F4;
     }
     
     .emailbottom {
-        top: 60vw;
+        top: 74vw;
     }
 
     .bg_only{
@@ -221,10 +230,181 @@ border-radius: 10px;
     }
 
     .greenbg{
-        bottom: -40vw;
+        top:96vw;
+        height: 35vw;
+        clip: rect(0, 300px, 177px, 0);
     }
 
     .yellowbg{
-        bottom: 0%;
+        top:150vw;
+        height: 24.6vw;
+
+    }
+
+    .main_conatct{
+        margin-left:8vw;
+        width: 500px;
+        height: 550px;
+        margin-top: 6vw;
+    }
+
+    .bg_only{
+        display: none;
+    }
+
+    .doit{
+        height: 23vw;
+    }
+
+    .backall{
+        margin-bottom: 8%;
     }
   }
+
+  @media screen and (max-width:450px){
+    .insisemail{
+        margin-top: 26vw;
+    }
+
+    .pques{
+        font-size: 20px;
+    }
+
+    .contact{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .would_love{
+        font-size: 13px;
+        line-height: 18px;
+        width: 80%;
+    }
+
+    .emailtop{
+        top:90vw;
+    }
+
+    .emailbottom{
+        top:95vw;
+    }
+
+    .main_conatct{
+        margin-top: 10vw;
+        width: 60vw;
+        border-radius: 12px;
+        height: 64vw;
+    }
+
+    .label{
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .input{
+        margin-top: -2px;
+        height: 20px;
+    }
+
+    .doit{
+        height: 40px;
+        padding: 2px;
+    }
+
+    .submit{
+        margin-top: 10px;
+        width: 40%;
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .contactform{
+        padding: 10px;
+    }
+
+    .backall{
+        margin-top: 15vw;
+        margin-bottom: 20vw;
+    }
+
+    .sponsor{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .talk{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .sponsorbtn{
+        margin-top: 40px;
+        font-size: 15px;
+        width: 40%;
+        padding: 5px 15px;
+        font-weight: 500;
+    }
+
+    .greenbg{
+        top:151.7vw;
+        height: 40vw;
+        clip: rect(0, 300px, 97px, 0);
+    }
+
+    .yellowbg{
+        top:210vw;
+    }
+  }
+
+  /* dark mode */
+
+  /* chnge background of envelope top and bottom  to rgba(255, 0, 0, 0.41)*/
+
+  /* .mainb{
+    background-color: #000000;
+  }
+
+  .contact{
+    color: white;
+  }
+
+  .would_love{
+    color: #FF9696;
+  }
+
+  .main_conatct{
+    background-color: #454545;
+    box-shadow: 7px -7px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .label{
+        color: white;
+    }
+
+    .input{
+        background-color: rgb(141, 139, 139);
+    }
+
+    .doit{
+        background-color: rgb(141, 139, 139);
+    }
+
+    .sponsor{
+        color: #4285F4;
+    }
+
+    .talk{
+        color: white;
+    }
+
+    .sponsorbtn{
+        background-color: yellow;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .pques{
+        color: yellow;
+    } */
+

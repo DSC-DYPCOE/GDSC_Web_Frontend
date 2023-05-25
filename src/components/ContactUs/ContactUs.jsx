@@ -18,7 +18,7 @@ export default function ContactUs() {
       })
 
     useEffect(() => {
-        AOS.init({duration: 2000});
+        AOS.init({duration: 800});
       },[]);
 
       const submitform = (e) => {
@@ -31,20 +31,20 @@ export default function ContactUs() {
 
   return (
     <div className={classes.mainb}>
-        <img src={entop} alt="" className={classes.emailtop} data-aos="fade-down" data-aos-duration="3000"/>
-        <img src={enbottom} alt="" className={classes.emailbottom} data-aos="fade-up" data-aos-duration="3000"/>
-        <img src={contactbg} alt="" className={classes.bg_only} data-aos="fade-right" data-aos-delay="3000" /> 
+        <img src={entop} alt="" className={classes.emailtop} data-aos="fade-down" data-aos-duration="800"/>
+        <img src={enbottom} alt="" className={classes.emailbottom} data-aos="fade-up" data-aos-duration="800"/>
+        <img src={contactbg} alt="" className={classes.bg_only} data-aos="fade-right" data-aos-delay="800" /> 
          <img src={bgg} alt="" className={classes.greenbg}/> 
         <img src={bgy} alt="" className={classes.yellowbg}/> 
 
         <div className={classes.insisemail} data-aos="fade-up"
-     data-aos-delay="3000">
+     data-aos-delay="800">
             <p className={classes.pques}>Got A Question?</p>
             <p className={classes.contact}>Contact <span style={{color:"rgba(234, 67, 53, 1)"}}>G</span><span style={{color:"rgba(52, 168, 83, 1)"}}>D</span><span style={{color:"rgba(251, 188, 4, 1)"}}>S</span><span style={{color:"rgba(66, 133, 244, 1)"}}>C</span>!</p>
             <p className={classes.would_love}>We would love to hear from you! Please feel free to reach out to us
  with any questions or comments using the contact form below.</p>
 
-        <div className={classes.main_conatct} data-aos="flip-left" data-aos-delay="3000">
+        <div className={classes.main_conatct} data-aos="flip-left" data-aos-delay="800">
             <form name="myContact" className={classes.contactform} onSubmit={submitform}>
                 <label className={classes.label}>Name</label>
                 <input type='text' className={classes.input} required  value={userdata
