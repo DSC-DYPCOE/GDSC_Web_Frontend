@@ -1,13 +1,14 @@
 import React,{useEffect, useState} from 'react'
-import contactbg from './ContactImg/contactlbg.png';
-import enbottom from './ContactImg/emailbgb.svg'
-import entop from './ContactImg/mailbgt.svg'
-import bgg from './ContactImg/bgg.png'
-import bgy from './ContactImg/bgy.png'
+import contactbg from '../../assets/contactlbg.png';
+import enbottom from '../../assets/emailbgb.svg'
+import entop from '../../assets/mailbgt.svg'
+import bgg from '../../assets/bgg.png'
+import bgy from '../../assets/bgy.png'
 import classes from './ContactUs.module.css'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import EmailBgB from '../common/SVGs/EmailBgB';
 
 export default function ContactUs() {
 
@@ -33,6 +34,7 @@ export default function ContactUs() {
     <div className={classes.mainb}>
         <img src={entop} alt="" className={classes.emailtop} data-aos="fade-down" data-aos-duration="800"/>
         <img src={enbottom} alt="" className={classes.emailbottom} data-aos="fade-up" data-aos-duration="800"/>
+        {/* <EmailBgB className={classes.emailbottom}/> */}
         <img src={contactbg} alt="" className={classes.bg_only} data-aos="fade-right" data-aos-delay="800" /> 
          <img src={bgg} alt="" className={classes.greenbg}/> 
         <img src={bgy} alt="" className={classes.yellowbg}/> 

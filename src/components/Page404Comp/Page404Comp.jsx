@@ -1,8 +1,8 @@
 import './Four04.css';
 import { useEffect } from 'react';
-import backimg from './assets/img1.png'
-import elp from './assets/img2.svg'
-import nnn from './assets/nnn.png'
+import backimg from '../../assets/img1.png'
+import elp from '../../assets/img2.svg'
+import nnn from '../../assets/nnn.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 

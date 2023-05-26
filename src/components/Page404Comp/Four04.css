@@ -44,7 +44,7 @@
   
   .pg404-bg{
     right: 0px;
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     width: 795px;
     height: 393px;
@@ -74,7 +74,7 @@
     line-height: 50px;
     width: 40%;
     margin-left: 5%;
-    z-index: 7;
+    z-index: 1;
   }
   
   .pg404s1{
@@ -181,7 +181,7 @@
     .pg404-also-try{
       width: 95%;
       bottom: 160px;
-      z-index: 9;
+      z-index: 1;
     }
   
     .pg404-btncont{
