@@ -1,8 +1,8 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import aa from './aa.jpeg';
-import chatboticon from './chatboticon.jpg'
+// import chatboticon from './chatboticon.jpg'
 import {Hellomsgw, Allmem, Leaddo} from './differentopt.jsx';
-import group from './Group_268.svg'
+// import group from './Group_268.svg'
 import user from './user.png'
 import './css/chatbot.css'
 import LogoSVG from './logosvg';
@@ -21,11 +21,11 @@ const config = {
     <hr></hr>
     </div>,
    // Replaces the default bot avatar
-   botAvatar: (props) => <img className="hi" src={aa}/>,
+   botAvatar: (props) => <img className="hi" alt="" src={aa}/>,
   //  // Replaces the default bot chat message container
   //  botChatMessage: (props) => <MyCustomChatMessage {...props} />,
   //  // Replaces the default user icon
-   userAvatar: (props) => <img className="hi1" src={user}/>,
+   userAvatar: (props) => <img className="hi1" alt="" src={user}/>,
  },
   widgets: [
     {

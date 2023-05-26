@@ -10,6 +10,9 @@
     height: 90%;
     max-height: 90%;
   }
+  .page404main.dark{
+    background-color: #000;
+  }
   .page404{
     width: 100%;
     height: 100%;
@@ -62,6 +65,7 @@
     font-style: italic;
     color: rgba(102, 66, 70, 1);
   }
+
   
   .pg404-bigtext{
     position: absolute;
@@ -76,6 +80,10 @@
     margin-left: 5%;
     z-index: 1;
   }
+
+  .page404main.dark .pg404-bigtext{
+    color: #F8DAC2;
+  }
   
   .pg404s1{
     margin-top: 0px;
@@ -86,7 +94,9 @@
     font-weight: 800;
     color: rgba(56, 40, 43, 1);
   }
-  
+  .page404main.dark .pg404s1{
+    color: #F8DAC2;
+  }
   .pg404-404err{
     width: 100%;
     position: absolute;
@@ -95,6 +105,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeup .5s linear;
+  }
+
+  @keyframes fadeup {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   .pg404-also-try{
@@ -142,14 +164,11 @@
   
   /* responsive */
   @media screen and (max-width:850px) {
-  
     .pg404-conatinimg{
       position: absolute;
       width: 110vw;
       right: 0px;
       overflow: hidden;
-      
-  
     }
     .pg404_elp{
       width: 115%;

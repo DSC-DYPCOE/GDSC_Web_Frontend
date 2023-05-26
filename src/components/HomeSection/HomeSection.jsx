@@ -1,6 +1,6 @@
 import React from 'react'
-import { Landing } from '../components'
-import Overview from '../components/Overview/Overview'
+import { Landing } from '..'
+import Overview from '../Overview/Overview'
 
 const HomeSection = () => {
   return (

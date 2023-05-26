@@ -351,7 +351,7 @@
   bottom: 25px;
   right: 27px;
   transition: 0.5s;
-  background: none;
+  background: #fff;
   border: 2px solid rgb(4, 4, 4);
   color: rgb(5, 5, 5);
   z-index: 3;
@@ -366,6 +366,7 @@
   border: none;
   width: fit-content;
   transition: .5s;
+  background: none;
 }
 
 .box.hide p{
@@ -377,6 +378,7 @@
   /* display: none; */
   position: fixed;
   opacity: 0;
+  pointer-events: none;
   bottom: 90px;
   right: 30px;
   animation-name: slidebotA;
@@ -389,6 +391,7 @@
   opacity: 1;
   right: 30px;
   bottom: 90px;
+  pointer-events: visible;
   animation-name: slidebot;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;

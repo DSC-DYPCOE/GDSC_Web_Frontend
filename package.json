@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-chatbot-kit": "^2.1.2",
     "react-dom": "^18.2.0",
