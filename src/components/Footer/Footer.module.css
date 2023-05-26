@@ -1,5 +1,6 @@
 .main {
     background: url("../../assets/footerBg.svg");
+    /* background: none; */
     height: 50vh;
     width: 100%;
     display: flex;
