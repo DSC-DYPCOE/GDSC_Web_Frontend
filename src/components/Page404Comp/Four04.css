@@ -6,9 +6,12 @@
   .page404main{
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
-    height: 90%;
-    max-height: 90%;
+    /* overflow: hidden; */
+    /* position: relative; */
+    height: 103vh;
+    padding-top: 70px;
+    position: relative;
+    margin-bottom: 45px;
   }
   .page404main.dark{
     background-color: #000;
@@ -17,29 +20,23 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin: 0%;
-    padding: 0%;
-  }
-  
-  .navbar{
-    width: 100%;
+    
   }
   
   .pg404-conatinimg{
     overflow: hidden;
     position: absolute;
     right: 0%;
-    width: 70vw;
-  
-    bottom:0%;
-    height: 88vh;
+    width: 94vw;
+    margin-top: 50px;
+    height: 110vh;
+    
   }
   
   .pg404_elp{
     height: 150%;
-    width: 120%;
+    width: 300px;
     margin-left: 5%;
-    width: auto;
     overflow: hidden;
     object-fit: fill;
     
@@ -51,7 +48,7 @@
     position: absolute;
     width: 795px;
     height: 393px;
-    top: 33%;
+    top: 26%;
   }
   
   .pg404-shtext{
@@ -84,6 +81,10 @@
   .page404main.dark .pg404-bigtext{
     color: #F8DAC2;
   }
+
+  .page404main.dark .pg404-shtext{
+    color: rgb(248, 218, 194);
+  }
   
   .pg404s1{
     margin-top: 0px;
@@ -97,6 +98,22 @@
   .page404main.dark .pg404s1{
     color: #F8DAC2;
   }
+
+  .page404main.dark .pg404-bigtext{
+    color: rgb(143,106,110);
+  }
+
+  .page404main.dark .pg404-also-try{
+    color: rgb(143,106,110);
+  }
+  
+  
+  .page404main.dark .pg404-btn{
+    background-color: rgb(248, 218, 194);
+    color: rgb(87,52,58);
+  }
+
+
   .pg404-404err{
     width: 100%;
     position: absolute;
@@ -143,6 +160,7 @@
     justify-content: center;
     bottom: 5%;
     left: 5%;
+    z-index: 1;
   }
   
   .pg404-btn{
@@ -163,12 +181,16 @@
   }
   
   /* responsive */
-  @media screen and (max-width:850px) {
+  @media screen and (max-width:1200px) {
     .pg404-conatinimg{
       position: absolute;
       width: 110vw;
       right: 0px;
       overflow: hidden;
+    }
+
+    .page404main{
+      margin-bottom: -2%;
     }
     .pg404_elp{
       width: 115%;
@@ -199,12 +221,12 @@
   
     .pg404-also-try{
       width: 95%;
-      bottom: 160px;
+      bottom: 12%;
       z-index: 1;
     }
   
     .pg404-btncont{
-      bottom: 1%;
+      bottom: -2%;
     }
   }
   
@@ -216,33 +238,38 @@
   
     .pg404-404err{
       font-size: 50px;
+      font-weight: 700;
       line-height: 50px;
       margin-top: 70px;
     }
   
     .pg404-bigtext{
-      font-size: 30px;
+      font-size: 27px;
       margin-top: 190px;
       line-height: 35px;
+    }
+
+    .page404main{
+      margin-bottom: 60px;
     }
   
     .pg404-bg{
       object-fit: contain;
       width: 70%;
-      top:100px;
+      top:140px;
   
     }
   
     .pg404-also-try{
       font-size: 25px;
       line-height: 30px;
-      bottom: 150px;
+      bottom: 70px;
     }
   
     .pg404-btncont{
       width: 80%;
       left: 0%;
-      bottom: 3%;
+      bottom: -10%;
     }
   
     .pg404-btn{
@@ -253,7 +280,7 @@
   
     .pg404-conatinimg{
       width: 120vw;
-      height: 80vh;
+      height: 100vh;
     }
   
     .pg404_elp{
@@ -267,35 +294,16 @@
   }
   
   
-  /* night mode colors */
+  /* night mode colors
   
-  /* ./assets/img2.svg => change color to rgb(34,22,23) */
+  /* ./assets/img2.svg => change color to rgb(34,22,23) 
   
-  /* .pg404-conatinimg{
+  .pg404-conatinimg.dark{
     background-color: rgb(30,30,30);
   }
   
-  .page404main{
+  .page404main.dark{
     background-color: rgb(30,30,30);
   }
-  
-  .pg404-shtext{
-    color: rgb(248, 218, 194);
-  }
-  
-  .pg404-404err{
-    color: rgb(248, 218, 194);
-  }
-  
-  .pg404-bigtext{
-    color: rgb(143,106,110);
-  }
-  
-  .pg404-also-try{
-    color: rgb(143,106,110);
-  }
-  
-  .pg404-btn{
-    background-color: rgb(248, 218, 194);
-    color: rgb(87,52,58);
-  } */
+
+   */

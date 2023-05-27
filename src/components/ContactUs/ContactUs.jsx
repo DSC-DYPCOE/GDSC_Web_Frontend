@@ -1,10 +1,11 @@
-import React,{useEffect, useState} from 'react'
+import React,{useContext,useEffect, useState} from 'react'
 import contactbg from '../../assets/contactlbg.png';
 import enbottom from '../../assets/emailbgb.svg'
 import entop from '../../assets/mailbgt.svg'
 import bgg from '../../assets/bgg.png'
 import bgy from '../../assets/bgy.png'
 import classes from './ContactUs.module.css'
+import { ThemeContext } from '../../App';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -17,6 +18,7 @@ export default function ContactUs() {
         email: "",
         message: ""
       })
+      const theme = useContext(ThemeContext);
 
     useEffect(() => {
         AOS.init({duration: 800});
@@ -31,13 +33,14 @@ export default function ContactUs() {
       }
 
   return (
-    <div className={classes.mainb}>
+    <div className={`${classes.mainb} ${theme.theme === "light" ? classes.light : classes.dark}`}>
         <img src={entop} alt="" className={classes.emailtop} data-aos="fade-down" data-aos-duration="800"/>
         <img src={enbottom} alt="" className={classes.emailbottom} data-aos="fade-up" data-aos-duration="800"/>
-        {/* <EmailBgB className={classes.emailbottom}/> */}
         <img src={contactbg} alt="" className={classes.bg_only} data-aos="fade-right" data-aos-delay="800" /> 
          <img src={bgg} alt="" className={classes.greenbg}/> 
+         <div className={classes.abcd}>
         <img src={bgy} alt="" className={classes.yellowbg}/> 
+        </div>
 
         <div className={classes.insisemail} data-aos="fade-up"
      data-aos-delay="800">
