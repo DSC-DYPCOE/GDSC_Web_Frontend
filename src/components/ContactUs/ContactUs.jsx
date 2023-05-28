@@ -66,9 +66,8 @@ export default function ContactUs() {
         </div>
 
         <div className={classes.backall}>
-            <p className={classes.sponsor} data-aos="zoom-out">Sponser Us</p>
+            <p className={classes.sponsor} data-aos="zoom-out">Sponsor Us</p>
             <p className={classes.talk} data-aos="fade-up">By becoming a sponsor, you'll have the opportunity to promote your brand and showcase your commitment to social responsibility. </p>
-
             <button className={classes.sponsorbtn} data-aos="flip-up">Sponsor US</button>
         </div>
     </div>
