@@ -20,7 +20,7 @@ const Footer = () => {
         <FooterLogo color1={"#fff"} color2={"#ffffffa8"} />
       </div>
       <div className={classes.links}>
-        <div className={`${classes.contribute}`} onClick={(div) => { div.classList.add("show") }}>
+        <div className={`${classes.contribute}`}>
           <h2>Contribute</h2>
           <ul>
             <Link>File a Bug</Link>

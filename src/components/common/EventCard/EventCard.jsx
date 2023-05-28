@@ -12,7 +12,7 @@ const EventCard = ({ current }) => {
     Aos.init();
   }, []);
   return (
-    <div className={`${classes.main} ${theme.theme === "dark" ? classes.dark : ""}`} style={{ "--color": current.color, }} data-aos="fade-left" data-aos-duration="1000">
+    <div className={`${classes.main} ${theme.theme === "dark" ? classes.dark : ""}`} style={{ "--color": current.color, }}  data-aos="fade-left" data-aos-duration="1000">
       <div className={classes.container}>
         <div className={classes.imgDiv}><img alt="" src={current.img} /></div>
         <div className={classes.info}>

@@ -64,6 +64,7 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
+    overflow-x: hidden;
 }
 
 .upComingEventsContainer, .prevEventsContainer{
@@ -72,7 +73,8 @@
     flex-direction: column;
     width: 100%;
     gap: 50px;
-
+    /* align-content: flex-end; */
+    /* flex-basis: 10%; */
 }
 
 
@@ -80,7 +82,7 @@
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 50px;
 }
@@ -88,3 +90,9 @@
 .mainContainer.dark{
     color: #fff;
 }
+
+/* @media (max-width: 800px) {
+    .numbers h1 span{
+        font-size: small;
+    }
+} */

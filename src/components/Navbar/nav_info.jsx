@@ -38,7 +38,7 @@ let info = [
     {
         name: 'Login',
         to: '/login-signup',
-        iconName: 'local_post_office',
+        iconName: 'login',
 
     },
     
