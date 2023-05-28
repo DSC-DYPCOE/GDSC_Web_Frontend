@@ -1,14 +1,14 @@
 .topone {
   width: 100%;
   margin: auto;
-  z-index: 3;
+  z-index: 4;
 }
 
 .react-chatbot-kit-user-chat-message-container {
   display: flex;
   margin: 15px 0;
   justify-content: flex-end;
-  z-index: 3;
+  z-index: 4;
 
 }
 
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 4;
 }
 
 .react-chatbot-kit-user-avatar-icon {
