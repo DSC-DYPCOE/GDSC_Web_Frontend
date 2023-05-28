@@ -3,8 +3,8 @@ import classes from './ProjectCard2.module.css'
 import Button from '../Button/Button'
 import image from '../../../assets/projectBg.png'
 import { Link } from 'react-router-dom'
-import LinkIcon from '../Svgs/Link'
-import GithubIcon from '../Svgs/Github'
+import LinkIcon from '../SVGs/Link'
+import GithubIcon from '../SVGs/Github'
 import { ThemeContext } from '../../../App'
 
 const ProjectCard2 = ({ current }) => {

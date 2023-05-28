@@ -1,16 +1,16 @@
 import React from "react";
 import classes from "./Footer.module.css";
-import FooterLogo from "../common/Svgs/FooterLogo";
-import GithubIcon from "../common/Svgs/Github";
-import LinkedIn from "../common/Svgs/LinkedIn";
-import Insta from "../common/Svgs/Insta";
-import Discord from "../common/Svgs/Discord";
+import FooterLogo from "../common/SVGs/FooterLogo";
+import GithubIcon from "../common/SVGs/Github";
+import LinkedIn from "../common/SVGs/LinkedIn";
+import Insta from "../common/SVGs/Insta";
+import Discord from "../common/SVGs/Discord";
 // import {FooterLogo, 
-//         GithubIcon,
-//         LinkedIn,
-//         Insta,
-//         Discord,
-// } from '../common/Svgs';
+        // GithubIcon,
+        // LinkedIn,
+        // Insta,
+        // Discord,
+// } from '../common/SVGs';
 import { Link } from "react-router-dom";
 
 const Footer = () => {

@@ -10,10 +10,10 @@ import {
   IndividualProjectPage,
   TestingPage,
   AboutPage,
-  // Page404,
 } from "./pages";
 import Page404 from "./pages/Page404";
 import { Navbar, Footer } from "./components/index";
+// import Page404  from "./pages/Page404";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
 import classes from "./App.module.css"
 
@@ -29,27 +29,29 @@ const App = () => {
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        {console.log("The theme is " + theme)}
-        <div className={theme === "dark" ? classes.dark : ""}>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/login-signup" element={<LoginSignupPage />} />
-            <Route path="/events" element={<EventsPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route
-              path="/projects/:projectId"
-              element={<IndividualProjectPage />}
-            />
-            <Route path="/team" element={<TeamPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/testing" element={<TestingPage />} />
-            <Route path="*" element={<Page404 />} />
-          </Routes>
-          <Chatbotfolder />
-          <Footer />
-        </div>
+        
+        <Navbar />
+        <Routes>
+        {
+            (theme !== "light")?document.body.style.backgroundColor ="black"
+            :document.body.style.backgroundColor ="white"
+        }
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login-signup" element={<LoginSignupPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route
+            path="/projects/:projectId"
+            element={<IndividualProjectPage />}
+          />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/testing" element={<TestingPage />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+        <Chatbotfolder />
+        <Footer />
       </ThemeContext.Provider>
     </>
   );

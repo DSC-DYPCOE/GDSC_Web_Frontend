@@ -1,0 +1,360 @@
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 150vh;
+    flex-direction: column;
+    position: relative;
+    /* background-color: #071663; */
+    /* margin-bottom: -160px; */
+}
+
+
+.main2 {
+    width: 95%;
+    margin-top: 18vh;
+    height: 107vh;
+    background-color: white;
+}
+
+.mainbg {
+    width: calc(50% - 170px);
+    margin: 60px;
+    right: 0%;
+    margin-top: 80px;
+    position: absolute;
+
+    align-items: flex-end;
+}
+
+.left_body {
+    margin-top: 40px;
+    width: calc(50% + 135px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.mp {
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 68px;
+    text-align: center;
+
+}
+
+.welcome {
+    font-weight: 800;
+
+    color: #4285F4;
+}
+
+.expp {
+    font-family: cursive;
+    font-weight: 600;
+    margin-left: -10px;
+}
+
+.please {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.main_conatct {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.label {
+    width: 100%;
+    text-align: left;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 10px 20px;
+}
+
+.input {
+    margin: 0px 20px;
+    width: 90%;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.forgot {
+    margin-top: 20px;
+    margin-left: 30px;
+    background: none;
+    border: none;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.signin {
+    width: 90%;
+    margin: 0px 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: monospace;
+    background-color: #0F9D58;
+    border: none;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.others {
+    margin: 20px;
+    margin-left: 36px;
+    font-size: 27px;
+    width: 90%;
+    font-style: italic;
+    text-align: center;
+}
+
+.btn {
+    width: 55%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.go_btn {
+    height: 65px;
+    width: 75px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+}
+
+.google_btn {
+    scale: 0.9;
+}
+
+.discord_btn {
+    scale: 1.35;
+    margin-top: 4px;
+}
+
+.github_btn {
+    scale: 3.6;
+    margin-top: 4px;
+}
+
+.linkedin_btn {
+    scale: 1.2;
+    margin-top: 4px;
+}
+
+.input::placeholder{
+    font-size: 20px;
+    font-style: italic;
+    font-weight:lighter;
+}
+
+
+/* dark mode */
+
+.main.dark{
+    /* background-color: #102BB9; */
+}
+
+.main.dark .main2{
+    background-color: #000000;
+}
+
+.main.dark .mp{
+    color: white;
+}
+
+.main.dark .please{
+    color: white;
+}
+
+.main.dark .input{
+    color: #FFFFFF;
+}
+
+.main.dark .input:focus{
+    background-color: #000000;
+    border: 2px solid #FFB808;
+}
+
+.main.dark .label{
+    color: #FFFFFF;
+}
+
+.main.dark .forgot{
+    color: white;
+}
+
+.main.dark .go_btn{
+    border: 2px solid white;
+    background-color: #000000;
+}
+
+.main.dark .others{
+    color: white;
+}
+
+/* responsive */
+@media screen and (max-width:1300px){
+
+    .left_body{
+        width: 100%;
+        margin-top: -5%;
+    }
+    
+    .main2{
+        height: max-content;
+        margin-top: 10%;
+    }
+
+    .main{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 160vw;
+        padding-bottom: 30%;
+    }
+
+    .mainbg{
+       position: relative;
+       width: 60%;
+       margin: 10% 20%;
+    }
+
+}
+
+@media screen and (max-width:1030px){
+    .main2{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width:450px){
+
+    .main2{
+        width: 93%;
+        padding-bottom: 40px;
+    }
+
+    .mp{
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .please{
+        font-size: 25px;
+        line-height: 36px;
+        font-weight: 100;
+    }
+    .mainbg{
+        width: 90%;
+        margin-left: 6%;
+    }
+
+    .input{
+        padding: 5px;
+        margin: 0px -10px;
+        width: 110%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .label{
+        margin-left: -20px;
+    }
+
+    .forgot{
+        margin-left: 0;
+        /* width: 100%; */
+        /* font-size: 20px; */
+        /* font-weight: 400; */
+        /* margin-bottom: 6px; */
+    }
+
+    .signin{
+        width: 110%;
+        margin: 0px -10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .others{
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .btn{
+        width: 120%;
+        margin-left: -25px;
+    }
+
+    .go_btn{
+        width: 50px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .google_btn{
+        scale: 0.6;
+        margin-top: -8px;
+        margin-left: -5px;
+    }
+
+    .discord_btn{
+        scale: 1.1;
+        margin-top: 2px;
+    }
+
+    .github_btn{
+        scale: 2.8;
+    }
+
+    .linkedin_btn{
+        scale: 1.05;
+        margin-top: 2px;
+    }
+
+    .main{
+        min-height: 170vh;
+        margin-bottom: -35%;
+    }
+
+}

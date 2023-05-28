@@ -1,6 +1,7 @@
 .main {
     background: url("../../assets/footerBg.svg");
     height: 50vh;
+    z-index: 3;
     width: 100%;
     display: flex;
     align-items: center;
@@ -69,9 +70,12 @@
         padding-bottom: 20px;
         margin-bottom: 0;
     }
-
+    .main .logo{
+        padding: 0 10px;
+    }
     .main .links{
-        width: 75%;
+        width: 100%;
+        padding: 0 20px;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
