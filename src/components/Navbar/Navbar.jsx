@@ -43,6 +43,7 @@ const Navbar = () => {
               {info.map((currentValue)=>
 
               <li
+                key={currentValue.name}
                 className={`${classes.navbar_item} `}
                 onClick={() => {
                   setActive((prevValue) => !prevValue);

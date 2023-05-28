@@ -1,20 +1,23 @@
 .main {
     background: url("../../assets/footerBg.svg");
-    /* background: none; */
     height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* border: 2px red solid; */
+    /* gap: 50px; */
 }
 
 
 .main .logo {
     margin-top: 5em;
+}
+
+.main .links{
+    display: flex;
+    align-items: flex-start;
+    gap: 5vw;
+    justify-content: space-around;
 }
 
 .main ul {
@@ -36,30 +39,7 @@
     display: inline-block;
     color: #ffffff80;
     position: relative;
-    /* border: none; */
     transition: .5s ease-in-out;
-}
-
-.main ul a::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff80;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-in-out;
-}
-
-.main ul a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.connect ul a::after{
-    display: none;
 }
 
 .main div:nth-child(5) ul {
@@ -70,6 +50,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .main .links{
+        gap: 3vw;
+    }
     .main ul a{
         font-size: small;
     }
@@ -77,57 +60,32 @@
 
 @media screen and (max-width: 800px) {
     .main{
-        background: url("../../assets/footerBgMobile.svg");
-        width: 100%;
-        flex-direction: column;
-        /* height: fit-content; */
-        min-height: 600px;
-        border: red 2px solid;
-        background-size: cover;
-    }
-
-    .main div:nth-child(1){
-        margin-bottom: 50px;
-    }
-
-    .main div{
-        position: relative;
-        width: 80%;
-    }
-
-    .main div ul{
-        height: 0;
-        overflow: hidden;
-    }
-
-    .main div.show ul{
         height: fit-content;
-        overflow: visible;
-    }
-    .main div h2{
-        background: rgba(255, 255, 255, .1);
-        width: 100%;
-        /* max-width: 300px; */
-        padding: 10px;
-        border-radius: 15px;
-        color: var(--color);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        gap: 50px;
+        background-position: center;
+        padding-bottom: 20px;
+        margin-bottom: 0;
     }
 
-    .main div h2::before{
-        content: "+";
-        position: absolute;
-        right: 10%;
+    .main .links{
+        width: 75%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
     }
-
-    .main div:nth-child(5) h2{
+    .main .connect{
+        width: 50%;
+    }
+    .main .connect h2{
         display: none;
     }
-    .main div:nth-child(5) ul{
-        flex-direction: row;
+    .main .connect ul{
         justify-content: space-around;
-        height: fit-content;
-        margin-top: 50px;
-        margin-bottom: 20px;
+        flex-direction: row;
     }
 
 }
