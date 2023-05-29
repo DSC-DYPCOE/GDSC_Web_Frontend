@@ -17,6 +17,7 @@ const Hellomsgw = (props) => {
       handler: () => props.actionProvider.chapter_btn(),
        class: 'showoptions' }
   ]);
+  setButtonClass();
   const setbutton = buttonClass.map((title) => {
     return <button className={title.class} key={title.id} onClick={title.handler}>{title.id}</button>
   })
@@ -43,6 +44,8 @@ const Leaddo = (props) => {
       handler: () => props.actionProvider.collab_btn(),
        class: 'showoptions' }
   ]);
+  setButtonClass();
+
   const setbutton = buttonClass.map((title) => {
     return <button className={title.class} key={title.id} onClick={title.handler}>{title.id}</button>
   })
@@ -69,6 +72,8 @@ const Allmem = (props) => {
       handler: () => props.actionProvider.join_member_btn(),
        class: 'showoptions' }
   ]);
+  setButtonClass();
+
   const setbutton = buttonClass.map((title) => {
     return <button className={title.class} key={title.id} onClick={title.handler}>{title.id}</button>
   })

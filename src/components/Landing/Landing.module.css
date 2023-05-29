@@ -8,8 +8,47 @@
     align-items: center;
     justify-content: space-around;
     /* display: none; */
+    overflow: hidden;
 }
 
+.cube{
+    position: absolute;
+}
+
+.cube{
+    /* animation: transform infinite linear; */
+    animation-duration: 20s;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes transform {
+    0%{
+        left: 50%;
+        top: 0%;
+    }
+    25%{
+        top: 50%;
+        left: 0%;
+    }
+    50%{
+        left: 50%;
+        top: 100%;
+    }
+    75%{
+        left: 100%;
+        top: 50%;
+    }
+    100%{
+        left: 50%;
+        top: 0;
+    }
+}
+.cube:nth-child(2){
+    top: -10%;
+    left: 50%;
+    animation-delay: 2.5s;
+}
 .mainContainer {
     height: 95vh;
     width: 100%;

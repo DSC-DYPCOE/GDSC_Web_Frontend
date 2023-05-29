@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./TeamCard.module.css";
+// import classes from "./TeamCard.module.css";
 
 const TeamCard = () => {
   return <div>TeamCard</div>;
