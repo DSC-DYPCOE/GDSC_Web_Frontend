@@ -6,6 +6,7 @@ import bgg from '../../assets/bgg.png'
 import bgy from '../../assets/bgy.png'
 import classes from './ContactUs.module.css'
 import { ThemeContext } from '../../App';
+import { Button } from '../common';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -69,7 +70,7 @@ export default function ContactUs() {
             <p className={classes.sponsor} data-aos="zoom-out">Sponser Us</p>
             <p className={classes.talk} data-aos="fade-up">By becoming a sponsor, you'll have the opportunity to promote your brand and showcase your commitment to social responsibility. </p>
 
-            <button className={classes.sponsorbtn} data-aos="flip-up">Sponsor US</button>
+            <Button label='Sponsor US'  margin="40px" data-aos="flip-up"/>
         </div>
     </div>
   )

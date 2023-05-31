@@ -281,6 +281,10 @@ border-radius: 10px;
     .backall{
         margin-bottom: 8%;
     }
+
+    .mainb.dark .would_love{
+        color: white;
+    }
   }
 
   @media screen and (max-width:450px){
@@ -434,4 +438,6 @@ border-radius: 10px;
     .mainb.dark .pques{
         color: yellow;
     }
+
+    
 
