@@ -16,22 +16,23 @@ import { Navbar, Footer } from "./components/index";
 // import Page404  from "./pages/Page404";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
 
+
 export const ThemeContext = createContext("light")
 const App = () => {
   const [theme, setTheme] = useState("light");
+  // const [color, setColor] = useState("#fff");
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? "dark" : "light"))
+    // setColor(theme.theme==="dark" ? "#151515" : "#fff");
   }
+  // const them1 = "";
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        
+
         <Navbar />
         <Routes>
-        {
-            (theme !== "light")?document.body.style.backgroundColor ="black"
-            :document.body.style.backgroundColor ="white"
-        }
+          {theme !== "light" ? document.body.style.backgroundColor = "#151515" : document.body.style.backgroundColor = "white"}
           <Route path="/" element={<HomePage />} />
           <Route path="/login-signup" element={<LoginSignupPage />} />
           <Route path="/events" element={<EventsPage />} />

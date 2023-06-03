@@ -1,7 +1,98 @@
 .mainContainer{
-    height: 100vh;
+    padding-top: 20vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.infoContainer h1 span{
+    color: #4285F4;
+}
+
+.numbers{
+    box-sizing: border-box;
+    /* padding: 20px; */
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.numbers h1{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+}
+.numbers h1:nth-child(3)::after{
+    content: "+";
+    position: absolute;
+    top: -5%;
+    left: 85%;
+    animation: opacity 2s ease-in-out;
+}
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.numbers h1 span{
+    font-size: 30px;
+    display: block;
+    color: var(--color);
+}
+
+.eventsContainer{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    overflow-x: hidden;
+}
+
+.upComingEventsContainer, .prevEventsContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+    /* align-content: flex-end; */
+    /* flex-basis: 10%; */
+}
+
+
+.cards{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.mainContainer.dark{
+    color: #fff;
+}
+
+/* @media (max-width: 800px) {
+    .numbers h1 span{
+        font-size: small;
+    }
+} */

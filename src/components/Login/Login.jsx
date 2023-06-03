@@ -45,8 +45,8 @@ const Login = () => {
                 <input type='email' className={classes.input} required  value={userdata.email} onChange={(e) => setuserdata({ ...userdata, email: e.target.value })} placeholder='Enter your Email'></input>
                 <label className={classes.label} pla>Passowrd</label>
                 <input type='password' className={classes.input} required  value={userdata.password} onChange={(e) => setuserdata({ ...userdata, password: e.target.value })} placeholder='**************'></input>
-            <p className={classes.forgot}>Forgot Password</p>
             <button className={classes.signin}>Sign In</button>
+            <button className={classes.forgot}>Forgot Password ? </button>
             <p className={classes.others}>Sign In using : </p>
             <div className={classes.btn}>
             <button className={classes.go_btn} data-aos="zoom-in-left"><img className={classes.google_btn} src={google} alt=""/></button>

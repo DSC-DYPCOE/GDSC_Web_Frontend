@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import classes from "./Button.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
-const Button = ({
+
+const Button = (
+  {
   children,
   onClick,
   label = "Undefined",
@@ -12,7 +16,11 @@ const Button = ({
   margin = "",
   borderRadius = "",
   bgColor= "",
+  dataaos="",
 }) => {
+  useEffect(() => {
+    AOS.init({duration: 800});
+  },[]);
   return (
     <>
       <button
@@ -20,6 +28,7 @@ const Button = ({
         className={classes.button}
         onClick={onClick}
         disabled={disabled}
+        data-aos={dataaos}
       >
         {label || children}
       </button>

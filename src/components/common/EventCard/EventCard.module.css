@@ -1,7 +1,5 @@
 .main{
-    /* height: fit-content; */
-    /* aspect-ratio: 3/5; */
-    /* background-color: aqua; */
+    width: fit-content;
     border: 5px solid var(--color);
     padding: 10px;
     border-radius: 10px;
@@ -15,11 +13,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.imgDiv{
-    /* width: ; */
-    /* overflow: hidden; */
 }
 
 .imgDiv img{
@@ -45,4 +38,13 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+}
+
+.main.dark .imgDiv img{
+    box-shadow: 0 0 5px #ffffff42;
+    /* display: none; */
+}
+
+.main.dark .info{
+    color: #fff;
 }

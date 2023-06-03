@@ -10,7 +10,7 @@ import { Button } from '../common';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import EmailBgB from '../common/SVGs/EmailBgB';
+// import EmailBgB from '../common/SVGs/EmailBgB';
 
 export default function ContactUs() {
 
@@ -67,10 +67,10 @@ export default function ContactUs() {
         </div>
 
         <div className={classes.backall}>
-            <p className={classes.sponsor} data-aos="zoom-out">Sponser Us</p>
+            <p className={classes.sponsor} data-aos="zoom-out">Sponsor Us</p>
             <p className={classes.talk} data-aos="fade-up">By becoming a sponsor, you'll have the opportunity to promote your brand and showcase your commitment to social responsibility. </p>
 
-            <Button label='Sponsor US'  margin="40px" data-aos="flip-up"/>
+            <Button label='Sponsor US'  margin="40px" dataaos="flip-up"/>
         </div>
     </div>
   )
