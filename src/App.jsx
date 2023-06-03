@@ -5,30 +5,36 @@ import {
   EventsPage,
   ContactPage,
   LoginSignupPage,
-  NotFoundPage,
   ProjectsPage,
   TeamPage,
   IndividualProjectPage,
   TestingPage,
   AboutPage,
 } from "./pages";
+import Page404 from "./pages/Page404";
 import { Navbar, Footer } from "./components/index";
+// import Page404  from "./pages/Page404";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
-import LogoSVG from "./components/common/chatbot/logosvg";
 
-export const ThemeContext = createContext("light")
+
+export const ThemeContext = createContext(null)
 
 
 const App = () => {
-  const [theme, setTheme] = useState("light");
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const [theme, setTheme] = useState(systemTheme);
+  // console.log(systemTheme)
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? "dark" : "light"))
   }
+
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
+
         <Navbar />
         <Routes>
+          {theme !== "light" ? document.body.style.backgroundColor = "#151515" : document.body.style.backgroundColor = "white"}
           <Route path="/" element={<HomePage />} />
           <Route path="/login-signup" element={<LoginSignupPage />} />
           <Route path="/events" element={<EventsPage />} />
@@ -41,11 +47,10 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/testing" element={<TestingPage />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
         <Chatbotfolder />
         <Footer />
-        <LogoSVG />
       </ThemeContext.Provider>
     </>
   );

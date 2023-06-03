@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { createClientMessage } from 'react-chatbot-kit';
 
 class ActionProvider {

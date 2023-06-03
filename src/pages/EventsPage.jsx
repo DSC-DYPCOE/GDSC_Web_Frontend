@@ -1,7 +1,11 @@
 import React from "react";
+// import EventCard from "../components/common/EventCard/EventCard";
+import Events from "../components/EventsSection/Events";
 
 const EventsPage = () => {
-  return <div>EventsPage</div>;
+  return(
+    <Events />
+  )
 };
 
 export default EventsPage;

@@ -1,7 +1,7 @@
 import React from "react";
-import HomeSection from "../HomeSection/HomeSection";
+import HomeSection from "../components/HomeSection/HomeSection";
 
-import Chatbotfolder from "../components/common/chatbot/Chatbotfolder";
+// import Chatbotfolder from "../components/common/chatbot/Chatbotfolder";
 
 const Homepage = () => {
   return (

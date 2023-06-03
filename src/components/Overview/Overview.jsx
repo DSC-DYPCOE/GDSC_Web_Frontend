@@ -1,7 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import classes from './Overview.module.css'
+import Insta from '../../components/common/SVGs/Insta'
+import LinkedIn from '../../components/common/SVGs/LinkedIn'
+import Github from '../../components/common/SVGs/Github'
+import Discord from '../../components/common/SVGs/Discord'
 
 const Overview = () => {
+    const [selected, setSelected] = useState(null)
+    const toggle = (i) => {
+        if (selected === i){
+            return setSelected(null)
+        }
+
+        setSelected(i)
+    }
     return (
         <div className={classes.container}>
             <div className={classes.leftSection}>
@@ -13,32 +25,33 @@ const Overview = () => {
                     </span>
                 </p>
                 <div className={classes.socialBtns}>
-                    <button className={classes.socialbtn}><span className='material-symbols-outlined'>Home</span></button>
-                    <button className={classes.socialbtn}><span className='material-symbols-outlined'>Home</span></button>
-                    <button className={classes.socialbtn}><span className='material-symbols-outlined'>Home</span></button>
+                    <button className={classes.socialbtn}><Insta /> </button>
+                    <button className={classes.socialbtn}><LinkedIn /> </button>
+                    <button className={classes.socialbtn}><Github /></button>
+                    <button className={classes.socialbtn}><Discord /></button>
                 </div>
             </div>
             <div className={classes.rightSection}>
-                <div className={`${classes.concept} ${classes.box}`}>
-                    <h2 style={{"--bg-color": "rgba(11, 184, 83, 0.3)", "--color": "#0BB853"}}>Concept of GDSC</h2>
+                <div style={{"--bg-color": "#B6EACB"}} className={`${classes.concept} ${classes.box} ${selected===0 ? classes.show: ""}`}>
+                    <h2 style={{"--bg-color": "#B6EACB", "--color": "#0BB853"}} onClick={() => toggle(0)} >Concept of GDSC</h2>
                     <p>
                         The GDSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.
                     </p>
                 </div>
-                <div className={`${classes.target} ${classes.box}`}>
-                    <h2 style={{"--bg-color": "rgba(224, 81, 25, 0.251)", "--color": "#E05119"}}>Target Audience</h2>
+                <div style={{"--bg-color": "#F7D3C5"}} className={`${classes.target} ${classes.box} ${selected===1 ? classes.show: ""}`}>
+                    <h2 style={{"--bg-color": "#F7D3C5", "--color": "#E05119"}} onClick={() => toggle(1)} >Target Audience</h2>
                     <p>
                         The GDSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.
                     </p>
                 </div>
-                <div className={`${classes.why} ${classes.box}`}>
-                    <h2 style={{"--bg-color": "rgba(66, 133, 244, 0.3)", "--color": "#4285f4"}}>Why GDSC ?</h2>
+                <div style={{"--bg-color": "#C6DAFC"}} className={`${classes.why} ${classes.box} ${selected===2 ? classes.show: ""}`}>
+                    <h2 style={{"--bg-color": "#C6DAFC", "--color": "#4285f4"}} onClick={() => toggle(2)}>Why GDSC ?</h2>
                     <p>
                         The GDSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.
                     </p>
                 </div>
-                <div className={`${classes.other} ${classes.box}`}>
-                    <h2 style={{"--bg-color": "rgba(228, 180, 25, 0.3)", "--color": "#E4B419"}}>Other Concept</h2>
+                <div  style={{"--bg-color": "#F5E9BA"}} className={`${classes.other} ${classes.box} ${selected===3 ? classes.show: ""}`}>
+                    <h2 style={{"--bg-color": "#F5E9BA", "--color": "#E4B419"}} onClick={() => toggle(3)}>Other Concept</h2>
                     <p>
                         The GDSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.
                     </p>
