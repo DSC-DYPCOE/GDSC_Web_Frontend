@@ -17,15 +17,17 @@ import { Navbar, Footer } from "./components/index";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
 
 
-export const ThemeContext = createContext("light")
+export const ThemeContext = createContext(null)
+
+
 const App = () => {
-  const [theme, setTheme] = useState("light");
-  // const [color, setColor] = useState("#fff");
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const [theme, setTheme] = useState(systemTheme);
+  // console.log(systemTheme)
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? "dark" : "light"))
-    // setColor(theme.theme==="dark" ? "#151515" : "#fff");
   }
-  // const them1 = "";
+
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
