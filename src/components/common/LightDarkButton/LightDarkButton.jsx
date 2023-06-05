@@ -16,7 +16,7 @@ const LightDarkButton = () => {
           type="checkbox"
           className={`${classes.dn} ${classes.input}`}
           id="dn"
-          checked={theme.theme === "dark" ? true : false}
+          defaultChecked={theme.theme === "dark"}
         />
         <label htmlFor="dn" className={classes.toggle}>
           <span className={classes.toggle__handler}>

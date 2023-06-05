@@ -1,11 +1,13 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import classes from './Overview.module.css'
 import Insta from '../../components/common/SVGs/Insta'
 import LinkedIn from '../../components/common/SVGs/LinkedIn'
 import Github from '../../components/common/SVGs/Github'
 import Discord from '../../components/common/SVGs/Discord'
+import { ThemeContext } from "../../App"
 
 const Overview = () => {
+    const theme = useContext(ThemeContext)
     const [selected, setSelected] = useState(null)
     const toggle = (i) => {
         if (selected === i){
@@ -15,7 +17,7 @@ const Overview = () => {
         setSelected(i)
     }
     return (
-        <div className={classes.container}>
+        <div className={`${classes.container} ${theme.theme === "dark" ? classes.dark : ""}`}>
             <div className={classes.leftSection}>
                 <h1>What is GDSC ? 🤔</h1>
                 <p>
@@ -27,7 +29,7 @@ const Overview = () => {
                 <div className={classes.socialBtns}>
                     <button className={classes.socialbtn}><Insta /> </button>
                     <button className={classes.socialbtn}><LinkedIn /> </button>
-                    <button className={classes.socialbtn}><Github /></button>
+                    <button className={classes.socialbtn}><Github color={theme.theme === "dark" ? "#fff" : "#000"} /></button>
                     <button className={classes.socialbtn}><Discord /></button>
                 </div>
             </div>
