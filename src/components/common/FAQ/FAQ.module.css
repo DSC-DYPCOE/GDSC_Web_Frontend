@@ -1,0 +1,31 @@
+.main{
+    position: relative;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border: var(--borderColor) 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: var(--margin-top);
+}
+
+.main img{
+    position: absolute;
+    /* top: -50%; */
+    /* left: 100%; */
+    /* right: -20%; */
+}
+
+
+.main p{
+    color: #aaa;
+}
+
+@media (max-width: 800px) {
+    .main{
+        margin-top: 0;
+        margin-left: calc(var(--margin-top));
+    }
+}

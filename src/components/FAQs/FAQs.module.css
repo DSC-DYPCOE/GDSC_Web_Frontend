@@ -1,0 +1,31 @@
+.container{
+    background-color: #E8F7EF;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+.container.dark{
+    background-color: #222;
+    color: #fff;
+}
+
+.container .questions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .questions img:nth-child(1){
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .container .questions{
+        flex-direction: column;
+        gap: 50px;
+    }
+}

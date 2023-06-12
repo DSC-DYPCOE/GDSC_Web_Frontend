@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png"
 import { Button } from "../common";
 // import Cube from "../common/Cube/Cube";
 import { ThemeContext } from "../../App";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   const theme = useContext(ThemeContext)
@@ -18,7 +19,7 @@ const Landing = () => {
           <img src={logo} alt="Main Logo" />
           <h1>Google Developer Student Club</h1>
           <h3>D. Y. Patil College of Engineering</h3>
-          <Button label="Join Community" padding="0.75em 1.2em" margin="10px 0px"/>
+          <Button label={<Link to="https://gdsc.community.dev/dy-patil-college-of-engineering-pune/" target="_blank" style={{textDecoration: "none", color: "#fff"}}>Join Community</Link>} padding="0.75em 1.2em" margin="10px 0px"/>
         </div>
       </div>
     </>

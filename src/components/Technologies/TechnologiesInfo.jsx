@@ -2,6 +2,10 @@ import webImg from "../../assets/webDev.gif"
 import cloudImg from "../../assets/cloudComputing.gif"
 import androidImg from "../../assets/android-robot.gif"
 import cyberImg from "../../assets/cyberSecurity.gif"
+// import mlLight from '../../assets/mlLight.gif'
+import mlLight1 from '../../assets/mlLight1.gif'
+// import mlDark from '../../assets/mlDark.gif'
+import cp from "../../assets/cp.gif"
 
 let info = [
     {
@@ -38,7 +42,7 @@ let info = [
         span: "Machine",
         heading: "Learning",
         description: "Learn how to drive user engagement and retention with intelligent apps that are able to effectively serve users what they need without the fuss by providing these systems with the ability to automatically learn and improve from experience without being explicitly programmed.",
-        img: webImg,
+        img: mlLight1,
         link: "https://codelabs.developers.google.com/?cat=TensorFlow",
         reverse: true,
         color: "#14B25F",
@@ -58,7 +62,7 @@ let info = [
         span: "Competitve",
         heading: "Programming",
         description: "With ever-increasing competition in the IT industry, learn how to keep your knowledge sharp with competitive programming. It will enhance your problem solving skills, logic and many more.",
-        img: cyberImg,
+        img: cp,
         link: "#",
         reverse: true,
         color: "#4A90F4",
