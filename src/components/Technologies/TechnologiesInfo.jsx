@@ -3,9 +3,9 @@ import cloudImg from "../../assets/cloudComputing.gif"
 import androidImg from "../../assets/android-robot.gif"
 import cyberImg from "../../assets/cyberSecurity.gif"
 // import mlLight from '../../assets/mlLight.gif'
-import mlLight1 from '../../assets/mlLight1.gif'
+import mlLight1 from '../../assets/ml.png'
 // import mlDark from '../../assets/mlDark.gif'
-import cp from "../../assets/cp.gif"
+import cp from "../../assets/cp.png"
 
 let info = [
     {
