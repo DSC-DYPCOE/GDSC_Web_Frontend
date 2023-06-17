@@ -6,10 +6,8 @@ import { ThemeContext } from '../../App'
 // import {useNavigate} from 'react-router-dom'
 import { useContext } from 'react'
 import { Button } from '../common'
-import { useNavigate } from 'react-router'
 
 const FAQs = () => {
-    const navigator = useNavigate()
     const clickHandler = () => {
         window.location.href = "https://www.google.com"
     }
