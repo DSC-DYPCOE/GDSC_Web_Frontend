@@ -18,8 +18,11 @@
     /* right: -20%; */
 }
 
-
 .main p{
+    color: #444;
+}
+
+.main.dark p{
     color: #aaa;
 }
 
