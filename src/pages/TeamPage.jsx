@@ -1,7 +1,8 @@
 import React from "react";
+import MainCard from "../components/CardSection/MainCard";
 
 const TeamPage = () => {
-  return <div>TeamPage</div>;
+  return <MainCard/>;
 };
 
 export default TeamPage;
