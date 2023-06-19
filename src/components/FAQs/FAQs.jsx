@@ -16,7 +16,7 @@ const FAQs = () => {
         <div className={`${classes.container} ${theme.theme==="dark"? classes.dark : ""}`} >
             <h1>Frequently Asked Questions</h1>
             <div className={classes.questions}>
-                {questions.map((current) => <FAQ image={current.topImage} question={current.question} answer={current.answer} borderColor={current.border} margin={current.margin}/>)}
+                {questions.map((current, idx) => <FAQ key={idx} image={current.topImage} question={current.question} answer={current.answer} borderColor={current.border} margin={current.margin}/>)}
             </div>
             <Button label='Send Us a Email' onClick={clickHandler}/>
         </div>

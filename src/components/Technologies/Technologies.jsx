@@ -10,7 +10,7 @@ const Technologies = () => {
     <div className={`${classes.container} ${theme.theme === "dark" ? classes.dark : ""}`}>
       <h1 className={classes.containerHeading}><span>Technologies</span> We are Intrested about</h1>
       <div className={classes.cardsDiv}>
-        {info.map((current) => <TechnologyCard current={current} />)}
+        {info.map((current, idx) => <TechnologyCard key={idx} current={current} />)}
       </div>
     </div>
   )
