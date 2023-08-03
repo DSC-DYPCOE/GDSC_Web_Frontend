@@ -24,7 +24,7 @@ let info = [
     {
         projectName: "Tour India",
         authors: ["Om Gawande"],
-        tagImg: [img1, img1, img1],
+        tagImg: [img1],
         tags: ["Web Development, ", "Open Source"],
         languages: ["HTML, ", "Css, ", "JS "],
         link: "",
@@ -32,13 +32,13 @@ let info = [
         color: "#0F9D58",
     },
     {
-        projectName: "T-vis",
+        projectName: "UN - Toxic",
         authors: ["Palash Rambhia"],
         tagImg: [img1],
         tags: ["Flutter Project"],
         languages: ["Dart", "Swift"],
         link: "",
-        github: "https://github.com/Palash2911/T-vis",
+        github: "https://github.com/Palash2911/UN-Toxic",
         color: "#4285F4",
     },
     {
@@ -49,7 +49,7 @@ let info = [
         languages: ["HTML, ", "Css, ", "JS ", "ReactJS", "FireBase"],
         link: "",
         github: "https://github.com/Shweta2003/SAHARA",
-        color: "#0F9D58",
+        color: "#EA4335",
     },
     {
         projectName: "Helper",
@@ -60,6 +60,16 @@ let info = [
         link: "",
         github: "https://github.com/Shweta2003/Helper",
         color: "#0F9D58",
+    },
+    {
+        projectName: "Rempo",
+        authors: ["Om Gawande", "Palash Rambhia",],
+        tagImg: [img1, img1, img1],
+        tags: ["Flutter Project"],
+        languages: ["Kotlin", "JavaScript", "CSS"],
+        link: "",
+        github: "https://github.com/Palash2911/Rempo",
+        color: "#4285F4",
     },
 ]
 
