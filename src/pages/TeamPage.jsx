@@ -1,8 +1,8 @@
 import React from "react";
-import MainCard from "../components/CardSection/MainCard";
+import TeamsPage from "../components/TeamsPage/TeamsPage";
 
 const TeamPage = () => {
-  return <MainCard/>;
+  return <TeamsPage />;
 };
 
 export default TeamPage;

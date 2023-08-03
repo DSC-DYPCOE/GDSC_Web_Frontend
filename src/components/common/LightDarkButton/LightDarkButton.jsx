@@ -6,7 +6,6 @@ import classes from "./LightDarkButton.module.css";
 const LightDarkButton = () => {
   const theme = useContext(ThemeContext)
   const changeTheme = () => {
-    console.log(theme.theme)
     theme.toggleTheme();
   }
   return (
@@ -17,6 +16,7 @@ const LightDarkButton = () => {
           type="checkbox"
           className={`${classes.dn} ${classes.input}`}
           id="dn"
+          defaultChecked={theme.theme === "dark"}
         />
         <label htmlFor="dn" className={classes.toggle}>
           <span className={classes.toggle__handler}>

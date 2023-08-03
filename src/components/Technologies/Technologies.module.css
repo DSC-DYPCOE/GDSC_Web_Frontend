@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.container.dark{
+    color: #fff;
+}
+
+.containerHeading{
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .containerHeading span{
+        font-size: 40px;
+        display: block;
+        color: #fff;
+    }
+    .containerHeading{
+        color: #aaa;
+        font-size: 20px;
+    }
+}

@@ -16,8 +16,8 @@
 }
 
 .cube{
-    /* animation: transform infinite linear; */
-    animation-duration: 20s;
+    animation: transform infinite linear;
+    animation-duration: 15s;
     transform-origin: center center;
     transform: translate(-50%, -50%);
 }
@@ -47,7 +47,7 @@
 .cube:nth-child(2){
     top: -10%;
     left: 50%;
-    animation-delay: 2.5s;
+    animation-delay: 3.5s;
 }
 .mainContainer {
     height: 95vh;
@@ -59,6 +59,9 @@
     justify-content: center;
 }
 
+.mainContainer.dark{
+    color: #fff;
+}
 
 .mainLockup {
     /* height: 40%; */
@@ -75,6 +78,9 @@ h3 {
     color: #6f6f6f;
 }
 
+.mainContainer.dark .mainLockup h3{
+    color: #afafaf;
+}
 
 
 @media (max-width: 800px) {
