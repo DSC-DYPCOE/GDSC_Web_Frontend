@@ -11,6 +11,7 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   const theme = useContext(ThemeContext);
   const [isOpen, setisOpen] = useState(false);
+
   const collapse = () => {
     if (isOpen) {
       setisOpen(false)
@@ -40,23 +41,23 @@ const Navbar = () => {
                   : `${classes.navbar_items}`
               }>
 
-              {info.map((currentValue)=>
+              {info.map((currentValue) =>
 
-              <li
-                key={currentValue.name}
-                className={`${classes.navbar_item} `}
-                onClick={() => {
-                  setActive((prevValue) => !prevValue);
-                  collapse();
-                }}
-              >
-                <NavLink to={currentValue.to} className={({ isActive }) => (isActive ? `${classes.active} ${classes.link_text}` : `${classes.link_text}`)}>
-                  <span className={`material-symbols-outlined ${classes.icon}`}>
-                    {currentValue.iconName}
-                  </span>
-                  {currentValue.name}
-                </NavLink>
-              </li>
+                <li
+                  key={currentValue.name}
+                  className={`${classes.navbar_item} `}
+                  onClick={() => {
+                    setActive((prevValue) => !prevValue);
+                    collapse();
+                  }}
+                >
+                  <NavLink to={currentValue.to} className={({ isActive }) => (isActive ? `${classes.active} ${classes.link_text}` : `${classes.link_text}`)}>
+                    <span className={`material-symbols-outlined ${classes.icon}`}>
+                      {currentValue.iconName}
+                    </span>
+                    {currentValue.name}
+                  </NavLink>
+                </li>
               )}
             </ul>
             <LightDarkButton />

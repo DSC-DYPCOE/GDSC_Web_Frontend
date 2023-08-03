@@ -46,6 +46,7 @@ let info = {
     ],
     "previous": [
         {
+            id : 1,
             img: image,
             eventName: 'Flutter Forward',
             date: "10-11 February 2023",
@@ -54,6 +55,7 @@ let info = {
             color: "#0F9D58",
         },
         {
+            id : 2,
             img: image,
             eventName: 'Flutter Forward',
             date: "10-11 February 2023",
@@ -62,6 +64,7 @@ let info = {
             color: "#EA4335"
         },
         {
+            id: 3,
             img: image,
             eventName: 'Flutter Forward',
             date: "10-11 February 2023",
@@ -70,6 +73,7 @@ let info = {
             color: "#4285F4",
         },
         {
+            id: 4,
             img: image,
             eventName: 'Flutter Forward',
             date: "10-11 February 2023",
@@ -78,6 +82,7 @@ let info = {
             color: "#4285F4",
         },
         {
+            id: 5,
             img: image,
             eventName: 'Flutter Forward',
             date: "10-11 February 2023",
@@ -86,6 +91,7 @@ let info = {
             color: "#4285F4",
         },
         {
+            id: 6,
             img: image,
             eventName: 'Flutter Forward',
             date: "10-11 February 2023",
@@ -94,6 +100,7 @@ let info = {
             color: "#4285F4",
         },
         {
+            id: 7,
             img: image,
             eventName: 'Flutter Forward',
             date: "10-11 February 2023",
@@ -102,6 +109,7 @@ let info = {
             color: "#4285F4",
         },
         {
+            id: 8,
             img: image,
             eventName: 'Flutter Forward',
             date: "10-11 February 2023",

@@ -10,8 +10,9 @@ import {
   IndividualProjectPage,
   TestingPage,
   AboutPage,
+  Page404,
 } from "./pages";
-import Page404 from "./pages/Page404";
+// import Page404 from "./pages/Page404";
 import { Navbar, Footer } from "./components/index";
 // import Page404  from "./pages/Page404";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";

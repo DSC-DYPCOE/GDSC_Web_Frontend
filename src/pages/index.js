@@ -8,3 +8,4 @@ export { default as TeamPage } from "./TeamPage";
 export { default as IndividualProjectPage } from "./IndividualProjectPage";
 export { default as TestingPage } from "./TestingPage";
 export { default as AboutPage } from "./AboutPage";
+export { default as Page404 } from "./Page404";
