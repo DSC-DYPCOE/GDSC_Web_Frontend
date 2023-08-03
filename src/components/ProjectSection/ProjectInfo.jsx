@@ -63,7 +63,7 @@ let info = [
     },
     {
         projectName: "Rempo",
-        authors: ["Om Gawande", "Palash Rambhia",],
+        authors: ["Om Gawande", "Palash Rambhia", "Saurabh Barde"],
         tagImg: [img1, img1, img1],
         tags: ["Flutter Project"],
         languages: ["Kotlin", "JavaScript", "CSS"],
