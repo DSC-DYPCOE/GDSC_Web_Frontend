@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
     "aos": "^2.3.4",
-    "react": "^16.2.0",
+    "react": "^18.2.0",
     "react-chatbot-kit": "^2.1.2",
-    "react-dom": "^16.14.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
     "react-scripts": "^5.0.1",
-    "react-spring": "^9.7.1",
-    "react-string": "^1.0.5"
+    "react-spring": "^9.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
