@@ -17,6 +17,7 @@ const Button = (
   borderRadius = "",
   bgColor= "",
   dataaos="",
+  cursorValue = "pointer"
 }) => {
   useEffect(() => {
     AOS.init({duration: 800});
@@ -24,7 +25,7 @@ const Button = (
   return (
     <>
       <button
-        style={{ padding: padding, backgroundColor: bgColor, borderRadius:borderRadius, fontSize: fontSize, "--hover-color": color, cursor: "pointer", margin: margin, }}
+        style={{ padding: padding, backgroundColor: bgColor, borderRadius:borderRadius, fontSize: fontSize, "--hover-color": color, cursor: cursorValue, margin: margin, }}
         className={classes.button}
         onClick={onClick}
         disabled={disabled}

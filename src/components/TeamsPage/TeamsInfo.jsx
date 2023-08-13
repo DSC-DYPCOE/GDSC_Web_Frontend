@@ -1,6 +1,6 @@
-import image from '../../assets/profilePic.png'
+// import image from '../../assets/img.png'
 import lead from '../../assets/lead.jpeg'
-import ins from '../../assets/ins.jpg'
+import ins from '../../assets/deepaliMam.jpg'
 import t1 from '../../assets/t1.jpg'
 import t2 from '../../assets/t2.jpeg'
 import t3 from '../../assets/t3.png'
@@ -35,7 +35,7 @@ let info = {
         {
             name: "Shreya Dhurde",
             position: "Lead",
-            profilePic: lead,
+            img: lead,
             shadow: "#F74037",
             insta: "",
             github: "",
@@ -44,7 +44,7 @@ let info = {
         {
             name: "Dipali Patil",
             position: "Faculty Coordinator",
-            profilePic: ins,
+            img: ins,
             shadow: "#F74037",
             insta: "",
             github: "",
@@ -56,7 +56,7 @@ let info = {
             {
                 name: "Om Gawande",
                 position: "Web Specialist",
-                profilePic: t1,
+                img: t1,
                 shadow: "#4285F4",
                 insta: "",
                 github: "",
@@ -65,7 +65,7 @@ let info = {
             {
                 name: "Palash Rambhia",
                 position: "Android Specialist",
-                profilePic: t2,
+                img: t2,
                 shadow: "#14B25F",
                 insta: "",
                 github: "",
@@ -74,7 +74,7 @@ let info = {
             {
                 name: "Simran Khaparde",
                 position: "CyberSecurity Specialist",
-                profilePic: t3,
+                img: t3,
                 shadow: "#FBBC04",
                 insta: "",
                 github: "",
@@ -83,7 +83,7 @@ let info = {
             {
                 name: "Nikhil Shinde",
                 position: "Cloud Specialist",
-                profilePic: t4,
+                img: t4,
                 shadow: "#4285F4",
                 insta: "",
                 github: "",
@@ -92,7 +92,7 @@ let info = {
             {
                 name: "Yash Pame",
                 position: "AI-ML Specialist",
-                profilePic: t5,
+                img: t5,
                 shadow: "#14B25F",
                 insta: "",
                 github: "",
@@ -101,7 +101,7 @@ let info = {
             {
                 name: "Onkar Waghmode",
                 position: "Tech Coordinator",
-                profilePic: crt1,
+                img: crt1,
                 shadow: "#14B25F",
                 insta: "",
                 github: "",
@@ -110,7 +110,7 @@ let info = {
             {
                 name: "Ayush Ahire",
                 position: "Tech Coordinator",
-                profilePic: crt2,
+                img: crt2,
                 shadow: "#4285F4",
                 insta: "",
                 github: "",
@@ -119,7 +119,7 @@ let info = {
             {
                 name: "Shweta Mandal",
                 position: "Tech Coordinator",
-                profilePic: crt3,
+                img: crt3,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -128,7 +128,7 @@ let info = {
             {
                 name: "Anvi Gautam",
                 position: "Tech Coordinator",
-                profilePic: crt5,
+                img: crt5,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -137,7 +137,7 @@ let info = {
             {
                 name: "Vedant Bodkhe",
                 position: "Tech Coordinator",
-                profilePic: crt4,
+                img: crt4,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -149,7 +149,7 @@ let info = {
             {
                 name: "Saurabh Barde",
                 position: "Design Lead",
-                profilePic: d2,
+                img: d2,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -158,7 +158,7 @@ let info = {
             {
                 name: "Sakshi Thombre",
                 position: "Design Lead",
-                profilePic: d1,
+                img: d1,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -167,7 +167,7 @@ let info = {
             {
                 name: "Kartik Bankar",
                 position: "Design Coordinator",
-                profilePic: crd3,
+                img: crd3,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -176,7 +176,7 @@ let info = {
             {
                 name: "Nikita Thakur",
                 position: "Design Coordinator",
-                profilePic: crd1,
+                img: crd1,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -185,7 +185,7 @@ let info = {
             {
                 name: "Raunak Mesharam",
                 position: "Design Coordinator",
-                profilePic:crd2,
+                img:crd2,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -196,7 +196,7 @@ let info = {
             {
                 name: "Abhishek Suryawanshi",
                 position: "Management Lead",
-                profilePic: m1,
+                img: m1,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -205,7 +205,7 @@ let info = {
             {
                 name: "Ashutosh Shimpi",
                 position: "Management Lead",
-                profilePic: m2,
+                img: m2,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -214,7 +214,7 @@ let info = {
             {
                 name: "Soham Wadje",
                 position: "Management Coordinator",
-                profilePic: crm1,
+                img: crm1,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -223,7 +223,7 @@ let info = {
             {
                 name: "Prathamesh Nigade",
                 position: "Management Coordinator",
-                profilePic: crm2,
+                img: crm2,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -232,7 +232,7 @@ let info = {
             {
                 name: "Arpan Yeole",
                 position: "Management Coordinator",
-                profilePic: crm3,
+                img: crm3,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -243,7 +243,7 @@ let info = {
             {
                 name: "Vaishnavi Mokadam",
                 position: "PR Lead",
-                profilePic: pr1,
+                img: pr1,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -252,7 +252,7 @@ let info = {
             {
                 name: "Vaishnavi Barge",
                 position: "PR Lead",
-                profilePic: pr2,
+                img: pr2,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -261,7 +261,7 @@ let info = {
             {
                 name: "K.S.S. Varsha",
                 position: "PR Coordinator",
-                profilePic: crp1,
+                img: crp1,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -270,7 +270,7 @@ let info = {
             {
                 name: "Yash Dhoot",
                 position: "PR Coordinator",
-                profilePic: crp3,
+                img: crp3,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
@@ -279,7 +279,7 @@ let info = {
             {
                 name: "Neelam Pawar",
                 position: "PR Coordinator",
-                profilePic: crp2,
+                img: crp2,
                 shadow: "#F74037",
                 insta: "",
                 github: "",
