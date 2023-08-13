@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700;900&display=swap");
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.class_int{
+  position: absolute;
+  margin-top: -340px;
+  width: 297px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tech_team_r1{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.Our_team{
+  margin-top: 40px;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.Lead_head{
+width: 100%;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 68px;
+margin-top: 60px;
+color: black;
+}
+
+.profile {
+  height: 100px;
+  width:100px;
+  border-radius: 50%;
+}
+
+.first {
+  -webkit-text-stroke: 2px #00304a;
+  color: transparent;
+  margin-top: 35px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.second {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  margin-top: -10px;
+  letter-spacing: 1px;
+  color: #00304a;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.parainfo {
+    margin: 0 0 1vw 0;
+  width: 12vw;
+  font-family: "Open Sans", sans-serif;
+  color: #00304a;
+  font-size: 16px;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.links img {
+  height: 35px;
+  width: auto;
+  transition: 0.25s;
+}
+
+.links img:hover {
+  scale: 1.1;
+}
+
+.card.dark .first{
+  -webkit-text-stroke: 1px rgb(255, 255, 84);
+}
+
+.card.dark .second{
+  color: rgb(254, 254, 115);
+}
+
+.card.dark .parainfo{
+  color: rgb(253, 253, 156);
+}
+
+.Lead_head.dark{
+  color: white;
+}
+
+@media screen and (max-width:790px){
+  .links{
+    width: 220px;
+    justify-content: space-evenly;
+  }
+  .links img{
+    height: 25px;
+  }
+
+  .Lead_head{
+    font-size: 40px;
+    margin-bottom: -10px;
+    margin-top: 30px;
+    line-height: 45px;
+  }
+
+  .parainfo {
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .first{
+    font-size: 27px;
+  }
+  .second{
+    font-size: 27px;
+  }
+}

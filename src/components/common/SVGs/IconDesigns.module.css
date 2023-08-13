@@ -1,0 +1,14 @@
+.main{
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border: #777 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.main svg{
+    height: 60%;
+}

@@ -1,0 +1,15 @@
+.cardContainers{
+    width: 80%;
+    flex-shrink: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+@media (max-width: 800px) {
+    .cardContainers{
+        width: 100%;
+    }
+}

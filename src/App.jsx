@@ -10,11 +10,16 @@ import {
   IndividualProjectPage,
   TestingPage,
   AboutPage,
+  Page404,
 } from "./pages";
-import Page404 from "./pages/Page404";
+// import Page404 from "./pages/Page404";
 import { Navbar, Footer } from "./components/index";
 // import Page404  from "./pages/Page404";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
+import Preloader from "./components/Preloader/Preloader";
+import { useEffect } from "react";
+import { getTeamsData } from './getData/getTeamsData'
+import { getEventsData } from "./getData/getEventsData";
 
 
 export const ThemeContext = createContext(null)
@@ -23,15 +28,27 @@ export const ThemeContext = createContext(null)
 const App = () => {
   const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   const [theme, setTheme] = useState(systemTheme);
-  // console.log(systemTheme)
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? "dark" : "light"))
   }
 
+  const [loading, setLoading] = useState(false)
+  
+  useEffect(() => {
+
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000);
+  
+  }, [])
+
   return (
     <>
-      <ThemeContext.Provider value={{ theme, toggleTheme }}>
 
+      {loading && <Preloader loaderTime={"2s"} />}
+
+      {!loading && <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <Navbar />
         <Routes>
           {theme !== "light" ? document.body.style.backgroundColor = "#151515" : document.body.style.backgroundColor = "white"}
@@ -51,7 +68,7 @@ const App = () => {
         </Routes>
         <Chatbotfolder />
         <Footer />
-      </ThemeContext.Provider>
+      </ThemeContext.Provider>}
     </>
   );
 };

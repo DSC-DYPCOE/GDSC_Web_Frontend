@@ -23,12 +23,12 @@ let info = [
         iconName: 'groups',
 
     },
-    {
-        name: 'About',
-        to: '/about',
-        iconName: 'menu_book',
+    // {
+    //     name: 'About',
+    //     to: '/about',
+    //     iconName: 'menu_book',
 
-    },
+    // },
     {
         name: 'Contact',
         to: '/contact',

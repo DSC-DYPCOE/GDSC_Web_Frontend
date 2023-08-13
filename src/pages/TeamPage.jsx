@@ -1,7 +1,8 @@
 import React from "react";
+import TeamsPage from "../components/TeamsPage/TeamsPage";
 
 const TeamPage = () => {
-  return <div>TeamPage</div>;
+  return <TeamsPage />;
 };
 
 export default TeamPage;

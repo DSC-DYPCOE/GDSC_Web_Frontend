@@ -7,25 +7,42 @@
     flex-direction: column;
     gap: 25px;
     align-items: center;
+    width: 300px;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+}
+
+.imgDiv{
+    width: 100%;
 }
 
 .imgDiv img{
     border-radius: 10px 10px 0 0;
     box-shadow: 0 5px 5px #00000042;
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
 }
 
 .info{
     border-radius: 0 0 10px 10px;
     box-shadow: 0 5px 5px #00000042;
     padding: 10px 20px;
+    background-color: #fff;
+}
+
+.info h2{
+    font-size: 20px;
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+.main.dark .container .info{
+    background-color: #252525;
 }
 
 .info p{
