@@ -18,6 +18,8 @@ import { Navbar, Footer } from "./components/index";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
 import Preloader from "./components/Preloader/Preloader";
 import { useEffect } from "react";
+import { getTeamsData } from './getData/getTeamsData'
+import { getEventsData } from "./getData/getEventsData";
 
 
 export const ThemeContext = createContext(null)
@@ -31,14 +33,14 @@ const App = () => {
   }
 
   const [loading, setLoading] = useState(false)
-
+  
   useEffect(() => {
 
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 1000);
-
+  
   }, [])
 
   return (

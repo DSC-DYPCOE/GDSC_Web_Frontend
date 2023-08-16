@@ -3,13 +3,17 @@ import TeamCard from '../../common/TeamCard/TeamCard'
 import info from '../TeamsInfo'
 import classes from './TechTeamPage.module.css'
 
-const TechTeamPage = () => {
+const TechTeamPage = ({data}) => {
+    // const teamData = await getTeamsData("technical")
+    // console.log(teamData);
+    // console.log("data", data);
     return (
         <>
             <h1>Technical Team</h1>
             <div className={`${classes.technicalTeam} ${classes.cardContainers}`}>
                 {
-                    info.teams.technical.map((current, idx) => <TeamCard key={idx} current={current} />)
+                    data.map((current, idx) => <TeamCard key={idx} current={current} />)
+                    // info.teams.technical.map((current, idx) => <TeamCard key={idx} current={current} />)
                 }
             </div>
         </>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import classes from './TeamsPage.module.css'
 import { TeamCard } from '../common'
 import info from './TeamsInfo'
@@ -10,31 +10,50 @@ import TechTeamPage from './TechTeamPage/TechTeamPage'
 import DesignTeam from './DesignTeamPage/DesignTeam'
 import ManagementTeam from './ManagementTeam/ManagementTeam'
 import PRTeam from './PRTeam/PRTeam'
-
+import { getTeamsData } from '../../getData/getTeamsData'
 import { ThemeContext } from '../../App'
 
 const TeamsPage = () => {
   const theme = useContext(ThemeContext)
-  const [teamName, setTeamName] = useState("Technical")
+
+  const [teamName, setTeamName] = useState("technical")
+  const [dataArray, setDataArray] = useState([])
+  const [leads, setLeads] = useState([])
+  useEffect(() => {
+    async function getData() {
+      const data = await getTeamsData(teamName)
+      setDataArray(data)
+    }
+    getData()
+  }, [teamName])
+
+  useEffect(() => {
+    async function getLead() {
+      const leadData = await getTeamsData("lead")
+      setLeads(leadData)
+    }
+    getLead()
+  }, [])
+
 
   return (
     <div className={`${classes.container} ${theme.theme === "dark" ? classes.dark : ""}`}>
       <h1>Our Team</h1>
       <div className={`${classes.leads} ${classes.cardContainers}`}>
-        {info.lead.map((current, idx) => <TeamCard key={idx} current={current} />)}
+        {leads.map((current, idx) => <TeamCard key={idx} current={current} />)}
       </div>
       <div className={classes.icons}>
-        <TechIcon onClick={() => { setTeamName("Technical") }} />
-        <DesignIcon onClick={() => { setTeamName("Design") }} />
-        <ManagementIcon onClick={() => { setTeamName("Management") }} />
-        <PRIcon onClick={() => { setTeamName("PR") }} />
+        <TechIcon onClick={() => { setTeamName("technical") }} selected={teamName === "technical"} />
+        <DesignIcon onClick={() => { setTeamName("design") }} selected={teamName === "design"} />
+        <ManagementIcon onClick={() => { setTeamName("management") }} selected={teamName === "management"} />
+        <PRIcon onClick={() => { setTeamName("pr") }} selected={teamName === "pr"} />
 
       </div>
       {
-        teamName === "Technical" ? <TechTeamPage /> : 
-        teamName==="Design" ? <DesignTeam /> : 
-        teamName === "Management" ? <ManagementTeam /> :
-        teamName === "PR" ? <PRTeam /> : null
+        teamName === "technical" ? <TechTeamPage data={dataArray} /> :
+          teamName === "design" ? <DesignTeam data={dataArray} /> :
+            teamName === "management" ? <ManagementTeam data={dataArray} /> :
+              teamName === "pr" ? <PRTeam data={dataArray} /> : null
       }
     </div>
   )

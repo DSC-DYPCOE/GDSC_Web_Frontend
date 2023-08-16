@@ -1,9 +1,10 @@
 import React from 'react'
 import classes from './IconDesigns.module.css'
 
-const TechIcon = ({ onClick }) => {
+const TechIcon = ({ onClick, selected }) => {
+    const style = {border: "5px solid "}
     return (
-        <div className={classes.main} onClick={onClick}>
+        <div className={classes.main} onClick={onClick} style={selected ? style : {}}>
             {/* <svg viewBox="0 0 80 83" fill="none" xmlns="http://www.w3.org/2000/svg" title="Technical Team" onClick={onClick}>
                 <g clipPath="url(#clip0_584_123)">
                     <path d="M14.9268 51.0305V48.2986H18.0385V27.8091H49.1563V48.2986H52.268V51.0305H14.9268ZM30.4856 48.2986H36.7092V46.9326H30.4856V48.2986ZM21.1503 44.2007H46.0445V30.541H21.1503V44.2007Z" fill="#F74037" />

@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import EventCard from '../common/EventCard/EventCard'
 import classes from './Events.module.css'
 import info from './EventsInfo'
 import { ThemeContext } from '../../App'
 import { useSpring, animated } from "react-spring"
+import { getEventsData } from '../../getData/getEventsData'
 
 function Number({ n }) {
     const { number } = useSpring({
@@ -17,6 +18,23 @@ function Number({ n }) {
 
 const Events = () => {
     const theme = useContext(ThemeContext)
+    const [previousEvents, setPreviousEvents] = useState([])
+    const [upcomingEvents, setUpcomingEvents] = useState([])
+    useEffect(() => {
+      async function fetchData() {
+        try {
+          const preData = await getEventsData("past");
+          const upcomingdata = await getEventsData("upcoming");
+          setPreviousEvents(preData)
+          setUpcomingEvents(upcomingdata)
+
+        } catch (error) {
+          console.log("Error fetching data:", error);
+        }
+      }
+      fetchData();
+    }, []);
+
     return (
         <div className={`${classes.mainContainer} ${theme.theme === "dark" ? classes.dark : ""}`}>
             <div className={classes.infoContainer}>
@@ -39,13 +57,15 @@ const Events = () => {
                 <div className={classes.upComingEventsContainer}>
                     <h1>Upcoming Events</h1>
                     <div className={classes.cards}>
-                        {info["upcoming"].map((current, idx) => (<EventCard key={idx} current={current} />))}
+                        {upcomingEvents && upcomingEvents.map((current, idx) => (<EventCard key={idx} current={current} />))}
+                        {upcomingEvents.length===0 && <h1 className={classes.noEventInfo}>No upcoming Events Right Now But we will be back shortly</h1>}
                     </div>
                 </div>
                 <div className={classes.prevEventsContainer}>
                     <h1>Previous Events</h1>
                     <div className={classes.cards}>
-                        {info["previous"].map((current, idx) => (<EventCard key={idx} current={current} />))}
+                        {previousEvents.map((current, idx) => (<EventCard key={idx} current={current} />))}
+                        {/* {info['previous'].map((current, idx) => (<EventCard key={idx} current={current} />))} */}
                     </div>
                 </div>
             </div>

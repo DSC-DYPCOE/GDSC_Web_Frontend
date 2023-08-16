@@ -77,14 +77,25 @@
     /* flex-basis: 10%; */
 }
 
+.upComingEventsContainer{
+    justify-content: start;
+}
 
 .cards{
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 50px;
+}
+
+/* .upComingEventsContainer h1{
+    color: #999;
+} */
+
+.cards h1.noEventInfo{
+    color: #fff;
 }
 
 .mainContainer.dark{
