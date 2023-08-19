@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './IconDesigns.module.css'
 
 const TechIcon = ({ onClick, selected }) => {
-    const style = {border: "5px solid "}
+    const style = {border: "none", background: "#ddd"}
     return (
         <div className={classes.main} onClick={onClick} style={selected ? style : {}}>
             {/* <svg viewBox="0 0 80 83" fill="none" xmlns="http://www.w3.org/2000/svg" title="Technical Team" onClick={onClick}>

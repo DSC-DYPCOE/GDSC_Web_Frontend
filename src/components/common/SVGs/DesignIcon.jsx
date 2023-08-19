@@ -3,7 +3,7 @@ import classes from './IconDesigns.module.css'
 
 
 const DesignIcon = ({ onClick, selected }) => {
-    const style = {border: "5px solid "}
+    const style = {border: "none", background: "#ddd"}
 
     return (
         <div className={classes.main} onClick={onClick} style={selected ? style : {}}>

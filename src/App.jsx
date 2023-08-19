@@ -46,9 +46,9 @@ const App = () => {
   return (
     <>
 
-      {loading && <Preloader loaderTime={"2s"} />}
+      {/* {loading && <Preloader loaderTime={"2s"} />} */}
 
-      {!loading && <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {<ThemeContext.Provider value={{ theme, toggleTheme }}>
         <Navbar />
         <Routes>
           {theme !== "light" ? document.body.style.backgroundColor = "#151515" : document.body.style.backgroundColor = "white"}

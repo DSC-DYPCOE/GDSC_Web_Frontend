@@ -5,15 +5,17 @@ import { Button } from "../common";
 import Cube from "../common/Cube/Cube";
 import { ThemeContext } from "../../App";
 import { Link } from "react-router-dom";
+import bg from '../../assets/bgImg.svg'
 
 const Landing = () => {
   const theme = useContext(ThemeContext)
   return (
     <>
-      <div className={classes.cubes}>
-        <Cube id="paint0_linear_11_7" startColor="#4285F4" stopColor="#0F9D58" />
-        <Cube id="paint0_linear_11_76" startColor="#F4B400" stopColor="#DB4437" /> 
-      </div>
+      {/* <div className={classes.cubes}> */}
+        {/* <img src={bg} /> */}
+        {/* <Cube id="paint0_linear_11_7" startColor="#4285F4" stopColor="#0F9D58" /> */}
+        {/* <Cube id="paint0_linear_11_76" startColor="#F4B400" stopColor="#DB4437" />  */}
+      {/* </div> */}
       <div className={`${classes.mainContainer} ${theme.theme === "dark" ? classes.dark : ""}`}>
         <div className={classes.mainLockup}>
           <img src={logo} alt="Main Logo" />
