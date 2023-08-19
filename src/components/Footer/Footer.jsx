@@ -50,7 +50,7 @@ const Footer = () => {
           <Link target="_blank" to="https://github.com/DSC-DYPCOE"><GithubIcon height={30} width={30} color={"#fff"} /></Link>
           <Link target="_blank" to="https://www.linkedin.com/company/dsc-dypcoe/"><LinkedIn height={30} width={30} /></Link>
           <Link target="_blank" to="https://www.instagram.com/dsc_dypcoe/"><Insta height={30} width={30} /></Link>
-          <Link target="_blank"><Discord height={30} width={30} /></Link>
+          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Discord height={30} width={30} /></Link>
         </ul>
 
       </div>
