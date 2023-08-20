@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@react-spring/web": "^9.7.3",
     "aos": "^2.3.4",
     "firebase": "^10.1.0",
     "framer-motion": "^10.15.1",

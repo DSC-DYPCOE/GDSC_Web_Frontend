@@ -44,6 +44,11 @@
     transition: .5s ease-in-out;
 }
 
+.main ul a:hover{
+    color: white;
+    transition-duration: 0s;
+}
+
 .main div:nth-child(5) ul {
     display: flex;
     flex-direction: column;
