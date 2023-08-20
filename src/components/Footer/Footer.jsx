@@ -12,6 +12,10 @@ import Discord from "../common/SVGs/Discord";
         // Discord,
 // } from '../common/SVGs';
 import { Link } from "react-router-dom";
+import Youtube from "../common/SVGs/Youtube";
+import Twitter from "../common/SVGs/Twitter";
+import Medium from "../common/SVGs/Medium";
+import Facebook from "../common/SVGs/Facebook";
 
 const Footer = () => {
   return (
@@ -51,8 +55,11 @@ const Footer = () => {
           <Link target="_blank" to="https://www.linkedin.com/company/dsc-dypcoe/"><LinkedIn height={30} width={30} /></Link>
           <Link target="_blank" to="https://www.instagram.com/dsc_dypcoe/"><Insta height={30} width={30} /></Link>
           <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Discord height={30} width={30} /></Link>
+          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Twitter height={30} width={30}/></Link>
+          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Youtube height={30} width={30} /></Link>
+          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Medium height={30} width={30} /></Link>
+          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Facebook height={30} width={30} /></Link>
         </ul>
-
       </div>
     </div>
   );

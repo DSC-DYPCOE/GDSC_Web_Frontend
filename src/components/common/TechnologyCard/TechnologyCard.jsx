@@ -34,25 +34,25 @@ const TechnologyCard = ({ current }) => {
     return (
         <div className={classes.main} style={{ flexDirection: `${current.reverse ? "row-reverse" : ""}`, "--bg-color": divBgColor }}>
             <div className={classes.imgDiv}>
-                <motion.img src={current.img} alt='Web' 
-                    initial={{
-                    x: `${current.reverse ? "-100vw": "100vw"}`
-                }}
-                animate={{
-                    x: 0
-                }}
-                transition={{
-                    delay: 5,
-                    duration: 2,
-                    type: 'spring',
-                    stiffness: 300
-                }}
+                <motion.img src={current.img} alt={current.heading} 
+                //     initial={{
+                //     x: `${current.reverse ? "-100vw": "100vw"}`
+                // }}
+                // animate={{
+                //     x: 0
+                // }}
+                // transition={{
+                //     delay: 5,
+                //     duration: 2,
+                //     type: 'spring',
+                //     stiffness: 300
+                // }}
                 />
             </div>
             <div className={classes.info}>
                 <h1><span style={{ "--color": current.color }}>{current.span}</span> {current.heading}</h1>
                 <p>Learn the core foundations of a delightful web experience both for the user and developer. Stay up to tabs with emerging and trending technologies. Get access to a guided, tutorial and hands-on coding experience.</p>
-                <Button label={name} borderRadius='10px' bgColor={current.color} />
+                {current.link && <Button label={name} margin='20px 0' borderRadius='10px' bgColor={current.color} />}
             </div>
         </div>
     )
