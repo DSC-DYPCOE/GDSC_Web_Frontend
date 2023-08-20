@@ -57,7 +57,7 @@
     height: 95vh;
     width: 100%;
     /* background-color: aqua; */
-
+    z-index: 5 all;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,11 +83,11 @@
     /* transform: scale(2); */
     width: 50%;
     transition: 2s;
-    transform: scale(1);
+    /* transform: scale(1); */
 }
 img:hover{
     cursor: pointer;
-    animation: animate 2s ease-in-out infinite alternate;
+    /* animation: animate 2s ease-in-out infinite alternate; */
 }
 
 @keyframes animate {

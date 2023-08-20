@@ -20,7 +20,8 @@ import Preloader from "./components/Preloader/Preloader";
 import { useEffect } from "react";
 import { getTeamsData } from './getData/getTeamsData'
 import { getEventsData } from "./getData/getEventsData";
-
+import LandingBG from "./components/common/LandingBackground/LandingBG";
+import { motion,AnimatePresence } from "framer-motion";
 
 export const ThemeContext = createContext(null)
 
@@ -33,14 +34,14 @@ const App = () => {
   }
 
   const [loading, setLoading] = useState(false)
-  
+
   useEffect(() => {
 
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 1000);
-  
+    }, 7000);
+
   }, [])
 
   return (
