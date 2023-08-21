@@ -19,7 +19,7 @@ const Overview = () => {
         setSelected(i)
     }
     return (
-        <div className={`${classes.container} ${theme.theme === "dark" ? classes.dark : ""}`}>
+      <div className={`${classes.container} ${theme.theme === "dark" ? classes.dark : ""}`}>
             <div className={classes.leftSection}>
                 <h1>What is GDSC ? 🤔</h1>
                 <p>
