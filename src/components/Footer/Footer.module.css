@@ -56,6 +56,17 @@
     align-items: center;
 }
 
+.connect ul{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* gap: 20px; */
+    flex-wrap: wrap;
+}
+
+
+
 @media screen and (max-width: 1000px) {
     .main .links{
         gap: 3vw;
@@ -88,7 +99,7 @@
         justify-content: space-between;
     }
     .main .connect{
-        width: 50%;
+        width: 90%;
     }
     .main .connect h2{
         display: none;
@@ -97,5 +108,4 @@
         justify-content: space-around;
         flex-direction: row;
     }
-
 }

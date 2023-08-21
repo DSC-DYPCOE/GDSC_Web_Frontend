@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import classes from "./Landing.module.css";
 import logo from "../../assets/logo.png"
 import { Button } from "../common";
-import Cube from "../common/Cube/Cube";
+// import Cube from "../common/Cube/Cube";
 import { ThemeContext } from "../../App";
 import { Link } from "react-router-dom";
-import bg from '../../assets/bgImg.svg'
+// import bg from '../../assets/bgImg.svg'
 import LandingBG from "../common/LandingBackground/LandingBG";
 
 const Landing = () => {

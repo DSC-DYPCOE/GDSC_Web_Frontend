@@ -14,30 +14,34 @@ const ProjectCard2 = ({ current }) => {
         AOS.init({duration: 500});
       },[]);
     const theme = useContext(ThemeContext);
+    console.log(current);
+
     return (
         <div className={`${classes.main} ${theme.theme === "dark" ? classes.dark : ""}`} style={{ "--accent-color": current.color }} data-aos="flip-left">
             <div className={classes.tags}>
                 {current.authors.map((authorName, index) => <div className={classes.tag}><img src={current.tagImg[index]} alt="Logo Img" /> {authorName}</div>)}
             </div>
             <div className={classes.imgDiv}>
-                <img src={image} alt="" />
+                <img src={current.image} alt="" />
             </div>
             <div>
                 <div className={classes.infoDiv}>
                     <div className={classes.info}>
                         <h2>{current.projectName}
-                            <Link to={current.link} target='_blank'>
+                            <Link to={current.liveLink} target='_blank'>
                                 <LinkIcon color={current.color} />
                             </Link>
-                            <Link to={current.github} target='_blank'>
+                            <Link to={current.githubLink} target='_blank'>
                                 <GithubIcon color={current.color} />
                             </Link>
                         </h2>
-                        <h4>{current.tags}</h4>
-                        <h5>{current.languages}</h5>
+                        <h4>{current.type}</h4>
+                        <div className={classes.tags}>
+                            {current.hashtags.map((current) => (<span>#{current} </span>))}
+                        </div>
                     </div>
                     <div className={classes.btn}>
-                        <Button label='View More' padding='0.5em 1em' borderRadius='1em 0' bgColor={current.color} />
+                        <Button onClick={() => { window.open(current.githubLink, "_blank") }} label='View More' padding='0.5em 1em' borderRadius='1em 0' bgColor={current.color} />
                     </div>
                 </div>
             </div>

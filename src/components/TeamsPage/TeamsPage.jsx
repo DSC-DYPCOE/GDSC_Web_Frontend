@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import classes from './TeamsPage.module.css'
 import { TeamCard } from '../common'
-import info from './TeamsInfo'
+// import info from './TeamsInfo'
 import TechIcon from '../common/SVGs/TechIcon'
 import DesignIcon from '../common/SVGs/DesignIcon'
 import ManagementIcon from '../common/SVGs/ManagementIcon'

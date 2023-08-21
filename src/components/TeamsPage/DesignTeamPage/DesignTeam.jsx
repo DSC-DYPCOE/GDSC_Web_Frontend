@@ -1,7 +1,7 @@
 import React from 'react'
 import { TeamCard } from '../../common'
 import classes from '../TechTeamPage/TechTeamPage.module.css'
-import info from '../TeamsInfo'
+// import info from '../TeamsInfo'
 import bgr from '../../../assets/redball.png'
 import bgg from '../../../assets/bgg.png'
 import bgb from '../../../assets/blueball.png'
