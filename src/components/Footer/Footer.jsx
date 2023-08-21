@@ -5,12 +5,7 @@ import GithubIcon from "../common/SVGs/Github";
 import LinkedIn from "../common/SVGs/LinkedIn";
 import Insta from "../common/SVGs/Insta";
 import Discord from "../common/SVGs/Discord";
-// import {FooterLogo, 
-        // GithubIcon,
-        // LinkedIn,
-        // Insta,
-        // Discord,
-// } from '../common/SVGs';
+
 import { Link } from "react-router-dom";
 import Youtube from "../common/SVGs/Youtube";
 import Twitter from "../common/SVGs/Twitter";
