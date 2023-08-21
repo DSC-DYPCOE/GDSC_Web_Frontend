@@ -119,8 +119,22 @@ h1{
     color: #fff;
 }
 
-/* @media (max-width: 800px) {
-    .numbers h1 span{
-        font-size: small;
+@media (max-width: 800px) {
+    h1{
+        font-size: 30px;
     }
-} */
+
+    .upComingEventsContainer h1, .prevEventsContainer h1{
+        font-size: 35px;
+    }
+
+    .numbers h1{
+        font-size: 30px;
+    }
+
+    .numbers h1 span{
+        width: 100%;
+        font-size: 23px;
+    }
+
+}
