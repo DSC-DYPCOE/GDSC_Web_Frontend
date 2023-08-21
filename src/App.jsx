@@ -16,12 +16,11 @@ import {
 import { Navbar, Footer } from "./components/index";
 // import Page404  from "./pages/Page404";
 import Chatbotfolder from "./components/common/chatbot/Chatbotfolder";
-import Preloader from "./components/Preloader/Preloader";
+// import Preloader from "./components/Preloader/Preloader";
 import { useEffect } from "react";
-import { getTeamsData } from './getData/getTeamsData'
-import { getEventsData } from "./getData/getEventsData";
-import LandingBG from "./components/common/LandingBackground/LandingBG";
-import { motion,AnimatePresence } from "framer-motion";
+// import { getTeamsData } from './getData/getTeamsData'
+// import { getEventsData } from "./getData/getEventsData";
+// import LandingBG from "./components/common/LandingBackground/LandingBG";
 
 export const ThemeContext = createContext(null)
 
@@ -33,13 +32,13 @@ const App = () => {
     setTheme((curr) => (curr === 'light' ? "dark" : "light"))
   }
 
-  const [loading, setLoading] = useState(false)
+  // const [loading, setLoading] = useState(false)
 
   useEffect(() => {
 
-    setLoading(true)
+    // setLoading(true)
     setTimeout(() => {
-      setLoading(false)
+      // setLoading(false)
     }, 7000);
 
   }, [])

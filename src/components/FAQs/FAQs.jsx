@@ -8,9 +8,6 @@ import { useContext } from 'react'
 import { Button } from '../common'
 
 const FAQs = () => {
-    const openGmail = () => {
-        window.open('gmail://', '_blank');
-      };
     const theme = useContext(ThemeContext)
     return (
         <div className={`${classes.container} ${theme.theme==="dark"? classes.dark : ""}`} >

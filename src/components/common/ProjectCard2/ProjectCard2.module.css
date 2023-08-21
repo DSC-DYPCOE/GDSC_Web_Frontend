@@ -3,7 +3,7 @@
     position: relative;
     /* width: 500px; */
     padding: 10px;
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -11,7 +11,7 @@
 }
 
 
-.tags{
+.names{
     position: absolute;
     float: right;
     width: fit-content;
@@ -20,8 +20,9 @@
     right: 5%;
     align-items: center;
     gap: 10px;
+    /* border: 2px solid #fff; */
 }
-.tag{
+.name{
     padding: 5px 10px;
     border-radius: 5px;
     transform: translate(0%, -50%);
@@ -31,9 +32,10 @@
     gap: 10px;
     color: #fff;
 }
-.tag img{
+.name img{
     border: 2px solid #fff;
     border-radius: 50%;
+    width: 30px;
 }
 
 .imgDiv{
@@ -42,8 +44,11 @@
     overflow: hidden;
     box-shadow: 0 2px 5px #00000042;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 350px;
+    aspect-ratio: 2;
+    overflow: hidden;
     /* max-width: 400px; */
 }
 
@@ -56,9 +61,10 @@
     /* border: blue 2px solid; */
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    /* gap: 20px; */
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0px 7px #00000042;
+    max-width: 350px;
 }
 
 .info{
@@ -67,6 +73,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     flex-shrink: 0;
+    /* width: 100%; */
     padding: 10px 0 10px 20px;
 }
 
@@ -83,6 +90,12 @@
 .info h4{
     color: var(--accent-color);
     white-space: nowrap;
+}
+.info .tags{
+    width: 80%;
+}
+.info .tags span{
+    font-size: 12px;
 }
 
 .btn{
