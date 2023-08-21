@@ -10,7 +10,7 @@
 
 h1{
     font-family: 'Open Sans';
-    font-size: 40px;
+    font-size: 65px;
 }
 
 .key1{
@@ -27,6 +27,8 @@ h1{
 .infoContainer h1 span{
     color: #4285F4;
 }
+
+
 
 .numbers{
     box-sizing: border-box;
@@ -49,6 +51,12 @@ h1{
     top: -5%;
     left: 85%;
     animation: opacity 2s ease-in-out;
+}
+
+.upComingEventsContainer h1, .prevEventsContainer h1{
+    color: #4285F4;
+    font-size: 50px;
+
 }
 @keyframes opacity {
     from{

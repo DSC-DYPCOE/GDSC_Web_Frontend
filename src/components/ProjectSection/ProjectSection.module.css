@@ -9,6 +9,14 @@
     /* row-gap: 50px; */
 }
 
+.head{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size:70px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
 .mainDiv.dark{
     background-color: #151515;
 }
@@ -21,6 +29,10 @@
 .mainDiv.dark h1{
     color: #fff;
 }
+
+.mainDiv.dark p{
+    color: #fff;
+}
 .container{
     margin-top: 50px;
     width: 80%;
@@ -29,4 +41,24 @@
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 100px;
+}
+
+.d{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lclass{
+    margin-right: 50px;
+    margin-top: -40px;
+}
+
+.rclass{
+    margin-top: -40px;
+}
+
+@media (max-width: 800px) {
+
 }
