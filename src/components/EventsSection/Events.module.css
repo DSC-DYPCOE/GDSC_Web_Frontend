@@ -10,7 +10,7 @@
 
 h1{
     font-family: 'Open Sans';
-    font-size: 40px;
+    font-size: 65px;
 }
 
 .key1{
@@ -27,6 +27,8 @@ h1{
 .infoContainer h1 span{
     color: #4285F4;
 }
+
+
 
 .numbers{
     box-sizing: border-box;
@@ -49,6 +51,12 @@ h1{
     top: -5%;
     left: 85%;
     animation: opacity 2s ease-in-out;
+}
+
+.upComingEventsContainer h1, .prevEventsContainer h1{
+    color: #4285F4;
+    font-size: 50px;
+
 }
 @keyframes opacity {
     from{
@@ -111,8 +119,22 @@ h1{
     color: #fff;
 }
 
-/* @media (max-width: 800px) {
-    .numbers h1 span{
-        font-size: small;
+@media (max-width: 800px) {
+    h1{
+        font-size: 30px;
     }
-} */
+
+    .upComingEventsContainer h1, .prevEventsContainer h1{
+        font-size: 35px;
+    }
+
+    .numbers h1{
+        font-size: 30px;
+    }
+
+    .numbers h1 span{
+        width: 100%;
+        font-size: 23px;
+    }
+
+}
