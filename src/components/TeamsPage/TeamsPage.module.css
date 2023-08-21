@@ -1,5 +1,10 @@
+
+
 .container{
     padding-top: 90px;
+    padding-bottom: 20px;
+    z-index: 3;
+    position: relative;
     /* height: 100vh; */
     width: 100%;
     display: flex;
@@ -7,6 +12,8 @@
     align-items: center;
     gap: 100px;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .container.dark{
@@ -41,11 +48,60 @@
     align-items: center;
     justify-content: space-around;
 }
+
+.iconsty{
+    background-color: pink;
+}
+
+.bgg{
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.bgy{
+    position: absolute;
+    right: 300px;
+    z-index: -1;
+    scale: 2;
+    top: 400px;
+    opacity: 0.8;
+}
+
+
+.head{
+    width: 55%;
+    padding-bottom: 50px;
+}
+
 @media (max-width: 800px) {
     .icons{
         width: 100%;
     }
     .cardContainers{
         width: 100%;
+    }
+
+    .bgg{
+        top: 130px;
+        left: -50px;
+    }
+
+    .bgy{
+        right: 0px;
+        top: 400px;
+        margin-top: 300px;
+        left: 100px;
+    }
+
+    .head{
+        width: 90%;
+        padding-bottom: 0px;
+    }
+
+    .h1{
+        font-size: 30px;
     }
 }

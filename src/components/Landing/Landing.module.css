@@ -9,6 +9,10 @@
     justify-content: space-around;
     /* display: none; */
     overflow: hidden;
+    /* background: url('../../assets/bgImg.svg') no-repeat; */
+    /* background-position: center; */
+    /* background-size: contain; */
+    /* opacity: .3; */
 }
 
 .cube{
@@ -53,7 +57,7 @@
     height: 95vh;
     width: 100%;
     /* background-color: aqua; */
-
+    z-index: 5 all;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,6 +78,27 @@
     padding: 10px;
 }
 
+.mainLockup img{
+    /* background-color: var(--background-color); */
+    /* transform: scale(2); */
+    width: 50%;
+    transition: 2s;
+    /* transform: scale(1); */
+}
+img:hover{
+    cursor: pointer;
+    /* animation: animate 2s ease-in-out infinite alternate; */
+}
+
+@keyframes animate {
+    from{
+        transform: scale(1) translateY(0);
+    }
+    to{
+        transform: scale(1.3) translateY(-20px);   
+    }
+}
+
 h3 {
     color: #6f6f6f;
 }
@@ -92,3 +117,41 @@ h3 {
         margin-top: -50px;
     }
 }
+
+
+/* try */
+/* 
+.mainContainer {
+    height: 95vh;
+    padding-top: 7%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img{
+    position: absolute;
+    scale: 4;
+    opacity: 0.5;
+}
+
+.img1{
+    z-index: 3;
+}
+
+.h1{
+    font-size: 60px;
+    z-index: 3;
+}
+
+.h3 {
+    color: #6f6f6f;
+    font-size: 30px;
+    z-index: 3;
+}
+
+}
+*/

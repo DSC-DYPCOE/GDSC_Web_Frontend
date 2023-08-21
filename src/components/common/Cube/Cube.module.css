@@ -1,9 +1,9 @@
 svg {
-    z-index: -1;
+    /* z-index: -1; */
     position: absolute;
-    top: var(--top);
-    left: var(--left);
-    opacity: 0.5;
+    /* top: var(--top); */
+    /* left: var(--left); */
+    /* opacity: 0.5; */
     /* animation: move 2s linear infinite; */
 
 }

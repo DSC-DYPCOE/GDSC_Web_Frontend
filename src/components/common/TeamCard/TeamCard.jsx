@@ -1,12 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import classes from "./TeamCard.module.css";
 import LinkedIn from "../SVGs/LinkedIn";
 import Insta from "../SVGs/Insta";
 import GithubIcon from "../SVGs/Github";
 import ImgBg from "../SVGs/ImgBg";
 import { ThemeContext } from "../../../App";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TeamCard = ({ current }) => {
+
+  useEffect(() => {
+    AOS.init({duration: 500});
+  },[]);
+
   const heights = "30px"
   const theme = useContext(ThemeContext)
   // console.log({ ...current.socials }.insta);
@@ -22,7 +29,7 @@ const TeamCard = ({ current }) => {
     }
   }
   return (
-    <div className={`${classes.main} ${theme.theme === "dark" ? classes.dark : ""}`}>
+    <div className={`${classes.main} ${theme.theme === "dark" ? classes.dark : ""}`} data-aos="zoom-in">
       <div className={classes.imgDiv}>
         <ImgBg imgColor={`${theme.theme === "dark" ? "#ccc" : "#222"}`} />
         <div className={classes.imgContainer}><img src={current.img} style={{ "--shadowColor": current.shadow }} alt="Profile" /></div>

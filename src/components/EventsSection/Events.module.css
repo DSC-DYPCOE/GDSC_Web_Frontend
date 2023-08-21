@@ -8,6 +8,15 @@
     justify-content: center;
 }
 
+h1{
+    font-family: 'Open Sans';
+    font-size: 40px;
+}
+
+.key1{
+    font-size: 100px;
+}
+
 .infoContainer{
     display: flex;
     flex-direction: column;

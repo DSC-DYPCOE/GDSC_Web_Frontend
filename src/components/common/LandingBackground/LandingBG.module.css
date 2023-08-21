@@ -1,0 +1,59 @@
+.svgContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 100vw; */
+    /* width: 100vw; */
+    z-index: 0;
+}
+
+
+.svg1{
+    transform: translate(1vw, 10vh);
+}
+
+.svg2{
+    transform: translate(4vw, 50vh);
+}
+.svg3{
+    transform: translate(-1vw, -1vh);
+}
+.svg4{
+    transform: translate(5vw, 8vh);
+}
+.svg5{
+    transform: translate(1vw, -8vh);
+}
+.svg6{
+    transform: translate(-2vw, 1vh);
+}
+.svgContainer svg {
+    transition: .5s;
+    transform-origin: center;
+    animation: rot 5s infinite ease-in-out;
+    animation-delay: var(--time);
+}
+
+@keyframes rot {
+
+    0%{
+        translate: 0;
+        rotate: 0;
+    }
+    25%{
+        rotate: 1.5deg;
+    }
+    50% {
+        translate: 0 10px;
+        /* rotate: 0deg; */
+    }
+    75%{
+        rotate: -1.5deg;
+    }
+}
+
+.svgContainer svg:hover {
+    scale: 1.3;
+    cursor: pointer;
+}

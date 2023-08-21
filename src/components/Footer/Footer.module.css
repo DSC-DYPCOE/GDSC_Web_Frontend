@@ -44,12 +44,28 @@
     transition: .5s ease-in-out;
 }
 
+.main ul a:hover{
+    color: white;
+    transition-duration: 0s;
+}
+
 .main div:nth-child(5) ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
+
+.connect ul{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* gap: 20px; */
+    flex-wrap: wrap;
+}
+
+
 
 @media screen and (max-width: 1000px) {
     .main .links{
@@ -83,7 +99,7 @@
         justify-content: space-between;
     }
     .main .connect{
-        width: 50%;
+        width: 90%;
     }
     .main .connect h2{
         display: none;
@@ -92,5 +108,4 @@
         justify-content: space-around;
         flex-direction: row;
     }
-
 }

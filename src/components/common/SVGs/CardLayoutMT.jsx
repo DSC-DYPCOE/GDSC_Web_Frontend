@@ -51,7 +51,7 @@ const CardLayoutMT = () => {
 </g>
 <path opacity="0.146" d="M58 173V199H78V178H73V173H58Z" fill={(theme.theme === "light") ? "black" : "white"}/>
 <path opacity="0.97" d="M59 172V198H79V177L74 172H59Z" fill="#9BA1A5"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M74 172V177H79" fill={(theme.theme === "light") ? "white" : "black"}/>
+<path fillRule="evenodd" clipRule="evenodd" d="M74 172V177H79" fill={(theme.theme === "light") ? "white" : "black"}/>
 <path d="M61 176.5H72M61 179.5H75M61 182.5H75" stroke="#2B4255"/>
 <path opacity="0.15" d="M83.8522 179.144C83.9919 179.283 84.1028 179.448 84.1785 179.63C84.2541 179.813 84.2931 180.008 84.2931 180.205C84.2931 180.402 84.2541 180.597 84.1785 180.78C84.1028 180.962 83.9919 181.127 83.8522 181.266L82.7922 182.326L67.2352 197.883L62.9932 199.297L83.4992 178.791L83.8522 179.144Z" fill={(theme.theme === "light") ? "black" : "white"}/>
 <path opacity="0.15" d="M83.1452 178.437C83.0061 178.297 82.8408 178.186 82.6588 178.111C82.4768 178.035 82.2817 177.996 82.0847 177.996C81.8876 177.996 81.6925 178.035 81.5105 178.111C81.3285 178.186 81.1632 178.297 81.0242 178.437L79.9642 179.498L64.4072 195.053L62.9932 199.297L83.4992 178.791L83.1452 178.437Z" fill={(theme.theme === "light") ? "black" : "white"}/>
