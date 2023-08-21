@@ -60,5 +60,27 @@
 }
 
 @media (max-width: 800px) {
+    .head{
+        font-size: 30px;
+        margin-left: -20px;
+    }
 
+    .lclass, .rclass{
+        margin: 0px;
+        width: 40px;
+    }
+
+    .lclass{
+        margin-top: -40px;
+    }
+
+    .d{
+        justify-content: space-evenly;
+        margin-top: -30px;
+    }
+    
+    .rclass{
+        margin-left: -60px;
+        margin-top: -40px;
+    }
 }
