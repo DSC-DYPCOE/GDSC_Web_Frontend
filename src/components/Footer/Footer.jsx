@@ -3,9 +3,10 @@ import classes from "./Footer.module.css";
 import FooterLogo from "../common/SVGs/FooterLogo";
 import GithubIcon from "../common/SVGs/Github";
 import LinkedIn from "../common/SVGs/LinkedIn";
+// import Insta from "../common/SVGs/Insta";
+// import Insta from "./common/SVGs/Insta"
 import Insta from "../common/SVGs/Insta";
 import Discord from "../common/SVGs/Discord";
-
 import { Link } from "react-router-dom";
 import Youtube from "../common/SVGs/Youtube";
 import Twitter from "../common/SVGs/Twitter";
