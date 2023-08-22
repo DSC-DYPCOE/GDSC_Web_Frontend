@@ -81,7 +81,7 @@
 .mainLockup img{
     /* background-color: var(--background-color); */
     /* transform: scale(2); */
-    width: 50%;
+    width: 30%;
     transition: 2s;
     /* transform: scale(1); */
 }

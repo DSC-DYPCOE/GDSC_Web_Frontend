@@ -11,15 +11,18 @@ import 'aos/dist/aos.css';
 
 const ProjectCard2 = ({ current }) => {
     useEffect(() => {
-        AOS.init({duration: 500});
-      },[]);
+        AOS.init({ duration: 500 });
+    }, []);
     const theme = useContext(ThemeContext);
-    console.log(current);
 
     return (
         <div className={`${classes.main} ${theme.theme === "dark" ? classes.dark : ""}`} style={{ "--accent-color": current.color }} data-aos="flip-left">
-            <div className={classes.tags}>
-                {current.authors.map((authorName, index) => <div className={classes.tag}><img src={current.tagImg[index]} alt="Logo Img" /> {authorName}</div>)}
+            <div className={classes.names}>
+                {/* {current.authors.map((authorName, index) => <div className={classes.tag}><img src={current.tagImg[index]} alt="Logo Img" /> {authorName}</div>)} */}
+                <div className={classes.name}>
+                    <img src={current.authorImg} alt="Logo Img" />
+                    {current.author}
+                </div>
             </div>
             <div className={classes.imgDiv}>
                 <img src={current.image} alt="" />
@@ -37,7 +40,7 @@ const ProjectCard2 = ({ current }) => {
                         </h2>
                         <h4>{current.type}</h4>
                         <div className={classes.tags}>
-                            {current.hashtags.map((current) => (<span>#{current} </span>))}
+                            {current.hashtags.map((current, idx) => (<span key={idx}>#{current} </span>))}
                         </div>
                     </div>
                     <div className={classes.btn}>
