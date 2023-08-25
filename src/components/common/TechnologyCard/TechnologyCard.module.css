@@ -4,17 +4,37 @@
     background-color: var(--bg-color);
     display: flex;
     align-items: center;
+    /* border: 2px solid red; */
     justify-content: space-around;
 }
 
 .imgDiv{
     height: 100%;
     /* order: 2; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.imgDiv img{
-    height: 100%;
+.gifContainer{
+    height: 80%;
+    /* border: 2px solid blue; */
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(.65);
 }
+
+.gifContainer svg{
+    height: 90% !important;
+}
+
+
+
+/* .imgDiv img{
+    height: 100%;
+} */
 
 .info{
     width: 30%;

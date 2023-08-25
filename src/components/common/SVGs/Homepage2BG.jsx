@@ -5,12 +5,14 @@ const Homepage2BG = () => {
     // const [color, setcolor] = useState("")
     const theme = useContext(ThemeContext)
     return (
-        <>
-            <div style={{
-                position: "absolute", height: "100%", width: "100%", background: theme.theme === "dark" ?
-                    "" :
-                    "linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .4)"}}>
-            </div >
+        <div style={{opacity: 0.6}}>
+            {/* <div style={{
+                position: "absolute", height: "100%", width: "100%", opacity: .1,
+                //  background: theme.theme === "dark" ?
+                    // "linear-gradient(rgba(21, 21,21, .5), rgba(21,21,21, .6)" :
+                    // "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .6)", 
+                    }}> */}
+            {/* </div > */}
         <svg width="1536" height="720" viewBox="0 0 1536 720" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1516_127)">
                 <ellipse cx="764.5" cy="660.5" rx="20.5" ry="21.5" fill="#14B25F" />
@@ -47,7 +49,7 @@ const Homepage2BG = () => {
                 </clipPath>
             </defs>
         </svg>
-        </>
+        </div>
     )
 }
 
