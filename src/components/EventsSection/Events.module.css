@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-h1{
+.infoContainer h1{
     font-family: 'Open Sans';
     font-size: 65px;
 }
@@ -45,11 +45,12 @@ h1{
     font-size: 50px;
     position: relative;
 }
+
 .numbers h1:nth-child(3)::after{
     content: "+";
     position: absolute;
-    top: -5%;
-    left: 85%;
+    top: -2%;
+    left: 95%;
     animation: opacity 2s ease-in-out;
 }
 
@@ -130,6 +131,9 @@ h1{
 
     .numbers h1{
         font-size: 30px;
+    }
+    .numbers h1:nth-child(3):after{
+        left: 90%;
     }
 
     .numbers h1 span{

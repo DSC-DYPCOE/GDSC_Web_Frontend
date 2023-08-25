@@ -69,7 +69,7 @@ export default function ContactUs() {
                 <p className={classes.would_love}>We would love to hear from you! Please feel free to reach out to us
                     with any questions or comments using the contact form below.</p>
 
-                <div className={classes.main_conatct} data-aos="flip-left" data-aos-delay="800">
+                <div className={classes.main_contact} data-aos="flip-left" data-aos-delay="800">
                     <form name="myContact" className={classes.contactform} onSubmit={submitform} ref={form}>
                         <label className={classes.label}>Name</label>
                         <input type='text' className={classes.input} required value={userdata
@@ -89,7 +89,7 @@ export default function ContactUs() {
                 <p className={classes.sponsor} data-aos="zoom-out">Sponsor Us</p>
                 <p className={classes.talk} data-aos="fade-up">By becoming a sponsor, you'll have the opportunity to promote your brand and showcase your commitment to social responsibility. </p>
 
-                <Button label='Sponsor US' margin="40px" dataaos="flip-up" />
+                <Button label='Sponsor US' margin="40px" dataaos="flip-up" onClick={() => {window.open("mailto:dsc.dypcoe@gmail.com", "_blank")}}/>
             </div>
         </div>
     )

@@ -5,6 +5,7 @@ import info from './EventsInfo'
 import { ThemeContext } from '../../App'
 import { useSpring, animated } from "react-spring"
 import { getEventsData } from '../../getData/getEventsData'
+import { Button } from '../common'
 
 function Number({ n }) {
     const { number } = useSpring({
@@ -69,6 +70,7 @@ const Events = () => {
                     </div>
                 </div>
             </div>
+            <Button label="See more" color='#DB4437' onClick={() => {window.open("https://gdsc.community.dev/dy-patil-college-of-engineering-pune/", "_blank")}}/>
         </div>
     )
 }

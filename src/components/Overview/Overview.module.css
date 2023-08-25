@@ -1,15 +1,17 @@
 .container {
     /* height: 100vh; */
     width: 80%;
+    /* overflow: hidden; */
     margin: 0 auto;
     margin-bottom: 50px;
     display: flex;
     justify-content: flex-start;
-    /* background-color: aqua; */
+    /* box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .container.dark{
     color: #fff;
+    /* color: #151515ad; */
 }
 
 .leftSection,

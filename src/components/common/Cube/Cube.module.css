@@ -1,38 +1,19 @@
-svg {
-    /* z-index: -1; */
-    position: absolute;
+.cube{
+    /* position: absolute; */
     /* top: var(--top); */
-    /* left: var(--left); */
-    /* opacity: 0.5; */
-    /* animation: move 2s linear infinite; */
-
+    /* margin-top: var(--top); */
+    /* margin-left: var(--left); */
+    /* animation: show .2s ease-in-out alternate infinite; */
+    /* display: none; */
 }
 
-
-@keyframes move {
-    /* 0% {
-        transform: translate(0, 0) rotate(0deg);
+@keyframes show {
+    from{
+        opacity: 0;
+        transform: scale(0,0);
     }
-
-    25% {
-        transform: translate(5px, 5px) rotate(5deg);
-    }
-
-    50% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-
-    75% {
-        transform: translate(-5px, 5px) rotate(-5deg);
-    }
-
-    100% {
-        transform: translate(0, 0) rotate(0deg);
-    } */
-    0%{
-        transform: translate(0);
-    }
-    50%{
-        transform: translate(100%);
+    to{
+        opacity: 1;
+        transform: scale(1,1);
     }
 }
