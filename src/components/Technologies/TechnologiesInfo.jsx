@@ -1,18 +1,20 @@
-import webImg from "../../assets/webDev.gif"
-import cloudImg from "../../assets/cloudComputing.gif"
+import webImg from "../../assets/web.json"
+import cloudImg from "../../assets/cloud.json"
 import androidImg from "../../assets/android-robot.gif"
-import cyberImg from "../../assets/cyberSecurity.gif"
+import cyberImg from "../../assets/cyber.json"
 // import mlLight from '../../assets/mlLight.gif'
-import mlLight1 from '../../assets/ml.png'
+import mlLight1 from '../../assets/ml.json'
 // import mlDark from '../../assets/mlDark.gif'
-import cp from "../../assets/cp.png"
+import cp from "../../assets/cp.json"
+
+import android from "../../assets/android.json"
 
 let info = [
     {
         span: "Android",
         heading: "Development",
         description: "Every year Google developers release exciting new updates to the world's most popular operating system. We always have sessions to keep you updated and mastering the latest trends in modern Android development.",
-        img: androidImg,
+        img: android,
         link: "https://codelabs.developers.google.com/?cat=Android",
         reverse: false,
         color: "#14B25F",

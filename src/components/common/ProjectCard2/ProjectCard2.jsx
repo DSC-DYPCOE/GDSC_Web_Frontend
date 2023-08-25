@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 
 const ProjectCard2 = ({ current }) => {
     useEffect(() => {
-        AOS.init({ duration: 500 });
+        AOS.init({duration: 500});
     }, []);
     const theme = useContext(ThemeContext);
 

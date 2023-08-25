@@ -8,8 +8,8 @@ import left from '../../assets/leftside.png'
 import right from '../../assets/rightside.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {getProjects} from "../../getData/getProjectsData"
 
+import { getProjects } from '../../getData/getProjectsData'
 
 const ProjectSection = () => {
     useEffect(() => {
@@ -21,6 +21,7 @@ const ProjectSection = () => {
     useEffect(() => {
         async function getData() {
             const projectData = await getProjects()
+            console.log(projectData);
             setProjectData(projectData)
         }
         getData()
