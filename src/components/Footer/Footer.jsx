@@ -51,10 +51,10 @@ const Footer = () => {
           <Link target="_blank" to="https://www.linkedin.com/company/dsc-dypcoe/"><LinkedIn height={30} width={30} /></Link>
           <Link target="_blank" to="https://www.instagram.com/dsc_dypcoe/"><Insta height={30} width={30} /></Link>
           <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Discord height={30} width={30} /></Link>
-          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Twitter height={30} width={30}/></Link>
-          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Youtube height={30} width={30} /></Link>
-          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Medium height={30} width={30} /></Link>
-          <Link target="_blank" to="https://discord.com/invite/AjHxR5D5rE"><Facebook height={30} width={30} /></Link>
+          <Link target="_blank" to="https://twitter.com/DSC_DYPCOE"><Twitter height={30} width={30}/></Link>
+          <Link target="_blank" to="https://www.youtube.com/@gdscdypcoe6579"><Youtube height={30} width={30} /></Link>
+          <Link target="_blank" to="https://medium.com/dsc-dypcoe"><Medium height={30} width={30} /></Link>
+          <Link target="_blank" to="https://www.facebook.com/dsc.dypcoe"><Facebook height={30} width={30} /></Link>
         </ul>
       </div>
     </div>

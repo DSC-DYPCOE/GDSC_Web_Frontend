@@ -1,63 +1,17 @@
 .cubes {
     position: absolute;
-    /* top: 10%; */
-    /* left: 50%; */
     height: 95vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* display: none; */
     overflow: hidden;
-    /* background: url('../../assets/bgImg.svg') no-repeat; */
-    /* background-position: center; */
-    /* background-size: contain; */
-    /* opacity: .3; */
+    /* object-fit: contain/; */
 }
 
-.cube{
-    position: absolute;
-}
 
-.cube{
-    animation: transform infinite linear;
-    animation-duration: 15s;
-    transform-origin: center center;
-    transform: translate(-50%, -50%);
-}
-
-@keyframes transform {
-    0%{
-        left: 50%;
-        top: 0%;
-    }
-    25%{
-        top: 50%;
-        left: 0%;
-    }
-    50%{
-        left: 50%;
-        top: 100%;
-    }
-    75%{
-        left: 100%;
-        top: 50%;
-    }
-    100%{
-        left: 50%;
-        top: 0;
-    }
-}
-.cube:nth-child(2){
-    top: -10%;
-    left: 50%;
-    animation-delay: 3.5s;
-}
 .mainContainer {
     height: 95vh;
     width: 100%;
     /* background-color: aqua; */
-    z-index: 5 all;
+    z-index: 5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,6 +25,7 @@
     /* height: 40%; */
     /* border: red 2px solid; */
     display: flex;
+    z-index: 5;
     align-items: center;
     justify-content: space-around;
     gap: 10px;

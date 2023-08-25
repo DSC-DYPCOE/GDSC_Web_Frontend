@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     min-height: 130vh;
+    /* justify-content: center; */
     flex-direction: column;
     position: relative;
     /* background-color: #071663; */
@@ -13,10 +14,19 @@
 .main2 {
     width: 95%;
     margin-top: 18vh;
-    height: 110vh;
+    height: fit-content;
+    /* height: 110vh; */
     background-color: white;
     overflow: hidden;
 }
+
+.main2.overlay{
+    background: rgba(0, 0, 0, 1);
+    filter: opacity(0.1);
+    transition: .5s;
+    /* display: none; */
+}
+
 
 .mainbg {
     width: calc(50% - 170px);
@@ -130,7 +140,7 @@
     font-size: 24px;
     color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 3px 4px 4px rgba(0, 0, 0, 0.25);
-
+    cursor: pointer;
 }
 
 .others {
@@ -178,117 +188,158 @@
     margin-top: 4px;
 }
 
-.input::placeholder{
+.input::placeholder {
     font-size: 20px;
     font-style: italic;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
 
 /* dark mode */
 
-.main.dark{
-    /* background-color: #102BB9; */
-}
-
-.main.dark .main2{
+.main.dark .main2 {
     background-color: #151515;
 }
 
-.main.dark .mp{
+.main.dark .mp {
     color: white;
 }
 
-.main.dark .please{
+.main.dark .please {
     color: white;
 }
 
-.main.dark .input{
+.main.dark .input {
     color: #FFFFFF;
     border: 2px solid #FFB808;
-    background:none;
+    background: none;
 }
 
-.main.dark .input:focus{
+.main.dark .input:focus {
     border: 2px solid #FFB808;
 }
 
-.main.dark .label{
+.main.dark .label {
     color: #FFFFFF;
 }
 
-.main.dark .forgot{
+.main.dark .forgot {
     color: white;
 }
 
-.main.dark .go_btn{
+.main.dark .go_btn {
     background-color: #3f3e3e;
 }
 
-.main.dark .others{
+.main.dark .others {
     color: white;
 }
 
-/* responsive */
-@media screen and (max-width:1300px){
 
-    .left_body{
+.message {
+    /* margin-top: 150px; */
+    height: 200px;
+    width: 400px;
+    /* color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid #fff; */
+    position: fixed;
+    top:40%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%);  */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  0 0 10px #000;
+    /* border: 2px solid #000; */
+    background: #fff;
+}
+
+.message span::after {
+    content: "+";
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    transform: rotate(45deg);
+    position: absolute;
+    transition: .2s;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.message span::after:hover {
+    transform: rotate(0deg);
+}
+
+.main.dark .message{
+    color: #fff;
+    background-color: #252525;
+}
+
+/* responsive */
+@media screen and (max-width:1300px) {
+
+    .left_body {
         width: 100%;
         margin-top: -5%;
     }
-    
-    .main2{
+
+    .main2 {
         height: max-content;
         margin-top: 10%;
     }
 
-    .main{
+    .main {
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         min-height: 80vw;
         padding-bottom: 3%;
     }
 
-    .mainbg{
+    .mainbg {
 
-       position: relative;
-       width: 60%;
-       margin: 10% 20%;
+        position: relative;
+        width: 60%;
+        margin: 10% 20%;
     }
 
 }
 
-@media screen and (max-width:1030px){
-    .main2{
+@media screen and (max-width:1030px) {
+    .main2 {
         margin-top: 20%;
     }
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:450px) {
 
-    .main2{
+    .main2 {
         width: 93%;
         padding-bottom: 30px;
     }
 
-    .mp{
+    .mp {
         margin-top: 20px;
         font-size: 25px;
         line-height: 25px;
     }
 
-    .please{
+    .please {
         font-size: 25px;
         line-height: 36px;
         font-weight: 100;
     }
-    .mainbg{
+
+    .mainbg {
         width: 90%;
         margin-left: 6%;
     }
 
-    .input{
+    .input {
         padding: 5px;
         margin: 0px -10px;
         width: 110%;
@@ -296,11 +347,11 @@
         margin-bottom: 20px;
     }
 
-    .label{
+    .label {
         margin-left: -20px;
     }
 
-    .forgot{
+    .forgot {
         margin-left: 0;
         /* width: 100%; */
         /* font-size: 20px; */
@@ -308,14 +359,14 @@
         /* margin-bottom: 6px; */
     }
 
-    .signin{
+    .signin {
         width: 110%;
         margin: 0px -10px;
         padding: 10px;
         border-radius: 15px;
     }
 
-    .others{
+    .others {
         font-size: 22px;
         width: 100%;
         text-align: center;
@@ -324,38 +375,38 @@
         margin-bottom: 10px;
     }
 
-    .btn{
+    .btn {
         width: 120%;
         margin-left: -25px;
     }
 
-    .go_btn{
+    .go_btn {
         width: 50px;
         height: 50px;
         border-radius: 10px;
     }
 
-    .google_btn{
+    .google_btn {
         scale: 0.6;
         margin-top: -8px;
         margin-left: -5px;
     }
 
-    .discord_btn{
+    .discord_btn {
         scale: 1.1;
         margin-top: 2px;
     }
 
-    .github_btn{
+    .github_btn {
         scale: 2.8;
     }
 
-    .linkedin_btn{
+    .linkedin_btn {
         scale: 1.05;
         margin-top: 2px;
     }
 
-    .main{
+    .main {
         min-height: 170vh;
         margin-bottom: -35%;
     }

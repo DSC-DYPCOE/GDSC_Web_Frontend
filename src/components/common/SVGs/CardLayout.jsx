@@ -27,12 +27,12 @@ const CardLayout = () => {
         <rect x={(isMobile !== true) ? "10" : "35"} y="10" width={(isMobile !== true) ? "277" : "220"} height={(isMobile !== true) ? "391" : "350"} rx="25" fill={(theme.theme === "light") ? "white" : "black"} stroke={(theme.theme === "light") ? "" : "white"} strokeWidth="4" />
       </g>
       <rect x="51" y="163.884" width="30" height="30" transform="rotate(-19.2367 51 163.884)" fill="url(#patternp)" />
-      <g clip-path="url(#clip0_1190_134)">
+      <g clipPath="url(#clip0_1190_134)">
         <path d="M241.333 149.333H214.667C212.833 149.333 211.35 150.833 211.35 152.667L211.333 169.333C211.333 171.167 212.833 172.667 214.667 172.667H241.333C243.167 172.667 244.667 171.167 244.667 169.333V152.667C244.667 150.833 243.167 149.333 241.333 149.333ZM226.333 154.333H229.667V157.667H226.333V154.333ZM226.333 159.333H229.667V162.667H226.333V159.333ZM221.333 154.333H224.667V157.667H221.333V154.333ZM221.333 159.333H224.667V162.667H221.333V159.333ZM219.667 162.667H216.333V159.333H219.667V162.667ZM219.667 157.667H216.333V154.333H219.667V157.667ZM234.667 169.333H221.333V166H234.667V169.333ZM234.667 162.667H231.333V159.333H234.667V162.667ZM234.667 157.667H231.333V154.333H234.667V157.667ZM239.667 162.667H236.333V159.333H239.667V162.667ZM239.667 157.667H236.333V154.333H239.667V157.667Z" fill={(theme.theme === "light") ? "black" : "white"} />
       </g>
       <rect x={(isMobile !== true) ? "208" : "195"} y="38.2197" width="30" height="30" transform="rotate(-21.9618 208 38.2197)" fill="url(#patternl)" />
       <rect x={(isMobile !== true) ? "42.3887" : "63.3887"} y="36" width="30" height="30" transform="rotate(8.41166 42.3887 36)" fill="url(#pattern2)" />
-      <g clip-path="url(#clip1_1190_134)" >
+      <g clipPath="url(#clip1_1190_134)" >
         <path d="M246.25 114.5V118.25H250C250 116.175 248.325 114.5 246.25 114.5ZM246.25 109.5V112C249.7 112 252.5 114.8 252.5 118.25H255C255 113.413 251.087 109.5 246.25 109.5ZM268.75 100.75H251.25V102.788C256.2 104.388 260.112 108.3 261.712 113.25H268.75V100.75ZM246.25 104.5V107C252.462 107 257.5 112.038 257.5 118.25H260C260 110.65 253.838 104.5 246.25 104.5ZM271.25 95.75H248.75C247.375 95.75 246.25 96.875 246.25 98.25V102H248.75V98.25H271.25V115.75H262.5V118.25H271.25C272.625 118.25 273.75 117.125 273.75 115.75V98.25C273.75 96.875 272.625 95.75 271.25 95.75Z" fill={(theme.theme === "light") ? "black" : "white"} x={(isMobile !== true) ? "277" : "20"} />
       </g>
       <rect x={(isMobile !== true) ? "34.6558" : "47"} y="95" width="30" height="30" transform="rotate(16.77 34.6558 95)" fill="url(#patternk)" />
@@ -40,11 +40,11 @@ const CardLayout = () => {
       <g filter="url(#filter1_d_1190_134)">
         <rect x="93" y="70" width="111" height="111" rx="55.5" fill="white" />
         <rect x="100" y="83" width="98" height="98" fill="url(#pattern4)" />
-        <rect x="95.5" y="72.5" width="106" height="106" rx="53" stroke="black" stroke-width="5" />
+        <rect x="95.5" y="72.5" width="106" height="106" rx="53" stroke="black" strokeWidth="5" />
       </g>
       <g filter="url(#filter2_d_1190_134)">
         <rect x="93" y="70" width="111" height="111" rx="55.5" fill="white" />
-        <rect x="95.5" y="72.5" width="106" height="106" rx="53" stroke={(theme.theme === "light") ? "black" : "white"} stroke-width="5" />
+        <rect x="95.5" y="72.5" width="106" height="106" rx="53" stroke={(theme.theme === "light") ? "black" : "white"} strokeWidth="5" />
       </g>
       <defs>
         <filter id="filter0_d_1190_134" x="0" y="0" width="297" height="411" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
