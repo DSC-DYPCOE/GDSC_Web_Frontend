@@ -6,6 +6,7 @@
 
 
 .mainb {
+    /* padding-top: 100px; */
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -16,7 +17,7 @@
     /* background-color: #000000; */
 }
 
-.mainb.dark{
+.mainb.dark {
     background-color: #151515;
 }
 
@@ -93,20 +94,20 @@
     z-index: 1;
 }
 
-.abcd{
+.abcd {
     right: 0%;
-    top:70.6vw;
+    top: 70.6vw;
     position: absolute;
     overflow: hidden;
 }
 
 .yellowbg {
-   margin-left: 15%;
-    
+    margin-left: 15%;
+
 }
 
-.insisemail{
-    margin-top: 11vw;
+.insisemail {
+    margin-top: 120px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -114,258 +115,262 @@
     flex-direction: column;
 }
 
-.pques{
+.pques {
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 25px;
-margin-bottom: 5px;
-
-
-color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 25px;
+    /* margin-bottom: 5px; */
+    color: #ffffff;
 
 }
 
-.contact{
+.contact {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 100px;
+    /* margin-bottom: 20px; */
+    /* identical to box height */
 
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 85px;
-line-height: 100px;
-margin-bottom: 20px;
-/* identical to box height */
 
-
-color: #000000;
+    color: #000000;
 }
 
-.would_love{
+.would_love {
     text-align: center;
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 27px;
-text-align: center;
-margin-top: 5px;
-width: 54%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    /* line-height: 27px; */
+    text-align: center;
+    /* margin-top: 5px; */
+    width: 54%;
 
-color: #000000;
+    color: #000000;
 
 }
 
-.main_conatct{
-    width: 600px;
+.main_contact {
+    width: 500px;
     margin-top: 20px;
-    height: 450px;
+    /* height: 450px; */
+    height: fit-content;
     align-self: flex-start;
-    margin-left: -12%;
+    margin-left: -10%;
     background-color: #ffffff;
     border-radius: 52px;
     box-shadow: 7px -7px 4px rgba(0, 0, 0, 0.25);
-    
+
 
 }
 
-.contactform{
+.contactform {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding:25px 50px;
+    padding: 25px 50px;
 }
 
-.input{
+.input {
     width: 100%;
-    height: 46px;
-    padding-left: 5px;
+    /* height: 46px; */
+    /* padding-left: 5px; */
     border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    /* color: #fff; */
+    padding: 8px;
     border: 1px solid grey;
 }
 
-.doit{
+
+.doit {
     width: 100%;
     height: 100px;
     border-radius: 5px;
     border: 1px solid grey;
     padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
     font-family: 'Open Sans';
+    resize: none;
 }
 
-.label{
+.label {
     width: 100%;
     text-align: left;
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 33px;
-margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    margin-top: 15px;
 }
 
-.submit{
+.submit {
     width: 150px;
     background-color: #4285F4;
     margin-top: 15px;
-    padding:5px 10px;
+    padding: 5px 10px;
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 33px;
-color: white;
-border: none;
-border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    color: white;
+    border: none;
+    border-radius: 10px;
 }
 
-  /* responsive */
-  @media screen and (max-width:850px){
+/* responsive */
+@media screen and (max-width:850px) {
     .emailtop {
         top: 69vw;
     }
 
-    .insisemail{
+    .insisemail {
         margin-top: 18vw;
     }
 
-    .pques{
+    .pques {
         color: #4285F4;
     }
-    
+
     .emailbottom {
         top: 74vw;
     }
 
-    .bg_only{
-        top:75vw;
+    .bg_only {
+        top: 75vw;
     }
 
-    .greenbg{
-        top:90vw;
+    .greenbg {
+        top: 90vw;
         height: 40vw;
         clip: rect(0, 600px, 330px, 0);
     }
 
-    .mainb{
+    .mainb {
         margin-bottom: -30px;
     }
 
-    .abcd{
-        top:128vw;
+    .abcd {
+        top: 128vw;
         width: 48vw;
-
-    
-
     }
 
-    .yellowbg{
+    .yellowbg {
         margin-left: 43%;
     }
 
-    .main_conatct{
-        margin-left:8vw;
+    .main_contact {
+        margin-left: 8vw;
         width: 500px;
-        height: 550px;
+        /* height: 550px; */
         margin-top: 6vw;
     }
 
-    .bg_only{
+    .bg_only {
         display: none;
     }
 
-    .doit{
+    .doit {
         height: 23vw;
     }
 
-    .backall{
+    .backall {
         margin-bottom: 8%;
     }
 
-    .mainb.dark .would_love{
+    .mainb.dark .would_love {
         color: white;
     }
-  }
+}
 
-  @media screen and (max-width:450px){
-    .insisemail{
+@media screen and (max-width:450px) {
+    .insisemail {
         margin-top: 26vw;
     }
 
-    .pques{
+    .pques {
         font-size: 20px;
     }
 
-    .contact{
+    .contact {
         font-size: 40px;
         line-height: 40px;
+        margin: 10px 0;
     }
 
-    .would_love{
+    .would_love {
         font-size: 13px;
         line-height: 18px;
         width: 80%;
     }
 
-    .emailtop{
-        top:90vw;
+    .emailtop {
+        top: 90vw;
     }
 
-    .emailbottom{
-        top:95vw;
+    .emailbottom {
+        top: 95vw;
     }
 
-    .main_conatct{
+    .main_contact {
         margin-top: 10vw;
         width: 60vw;
         border-radius: 12px;
-        height: 64vw;
+        /* height: 64vw; */
     }
 
-    .label{
+    .label {
         font-size: 14px;
         margin-top: 0px;
     }
 
-    .input{
+    .input {
         margin-top: -2px;
-        height: 20px;
+        /* height: 20px; */
     }
 
-    .doit{
-        height: 40px;
+    .doit {
+        min-height: 100px;
         padding: 2px;
     }
 
-    .submit{
+    .submit {
         margin-top: 10px;
         width: 40%;
         font-size: 14px;
         padding: 0px;
     }
 
-    .contactform{
+    .contactform {
         padding: 10px;
     }
 
-    .backall{
+    .backall {
         margin-top: 15vw;
         margin-bottom: 20vw;
     }
 
-    .sponsor{
+    .sponsor {
         font-size: 40px;
         line-height: 40px;
         margin-bottom: 20px;
     }
 
-    .talk{
+    .talk {
         font-size: 15px;
         line-height: 20px;
     }
 
-    .sponsorbtn{
+    .sponsorbtn {
         margin-top: 40px;
         font-size: 15px;
         width: 40%;
@@ -373,72 +378,71 @@ border-radius: 10px;
         font-weight: 500;
     }
 
-    .greenbg{
-        top:130vw;
+    .greenbg {
+        top: 130vw;
         height: 40vw;
     }
 
-    .abcd{
-        top:185vw;
+    .abcd {
+        top: 185vw;
         width: 48vw;
 
-    
+
 
     }
 
-    .yellowbg{
+    .yellowbg {
 
         scale: 0.5;
         margin-left: 3%;
     }
-  }
+}
 
-  /* dark mode */
+/* dark mode */
 
-  /* chnge background of envelope top and bottom  to rgba(255, 0, 0, 0.41)*/
+/* chnge background of envelope top and bottom  to rgba(255, 0, 0, 0.41)*/
 
-  .mainb.dark .contact{
+.mainb.dark .contact {
     color: white;
-  }
+}
 
-  /* .would_love{
+/* .would_love{
     color: #FF9696;
   } */
 
-  .mainb.dark .main_conatct{
+.mainb.dark .main_contact {
     background-color: #454545;
     box-shadow: 7px -7px 4px rgba(0, 0, 0, 0.25);
-    }
-    
-    .mainb.dark .label{
-        color: white;
-    }
+}
 
-    .mainb.dark .input{
-        background-color: rgb(141, 139, 139);
-    }
+.mainb.dark .label {
+    color: white;
+}
 
-    .mainb.dark .doit{
-        background-color: rgb(141, 139, 139);
-    }
+.mainb.dark .input {
+    background-color: rgb(141, 139, 139);
+    color: #fff;
+}
 
-    .mainb.dark .sponsor{
-        color: #4285F4;
-    }
+.mainb.dark .doit {
+    background-color: rgb(141, 139, 139);
+    color: #fff;
+}
 
-    .mainb.dark .talk{
-        color: white;
-    }
+.mainb.dark .sponsor {
+    color: #4285F4;
+}
 
-    .mainb.dark .sponsorbtn{
-        background-color: yellow;
-        font-weight: 600;
-        color: #000000;
-    }
+.mainb.dark .talk {
+    color: white;
+}
 
-    .mainb.dark .pques{
-        color: yellow;
-    }
+.mainb.dark .sponsorbtn {
+    background-color: yellow;
+    font-weight: 600;
+    color: #000000;
+}
 
-    
-
+.mainb.dark .pques {
+    color: yellow;
+}

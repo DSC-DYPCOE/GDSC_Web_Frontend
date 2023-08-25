@@ -142,7 +142,7 @@
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke: #000;
   strokeWidth: 5.5;
-  stroke-linecap: round;
+  strokeLinecap: round;
 }
 
 .navbar.dark .line{stroke: #fff;}
