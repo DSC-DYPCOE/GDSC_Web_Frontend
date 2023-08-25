@@ -13,13 +13,15 @@ const ProjectCard2 = ({ current }) => {
     useEffect(() => {
         AOS.init({duration: 500});
       },[]);
+
     const theme = useContext(ThemeContext);
     console.log(current);
 
     return (
-        <div className={`${classes.main} ${theme.theme === "dark" ? classes.dark : ""}`} style={{ "--accent-color": current.color }} data-aos="flip-left">
-            <div className={classes.tags}>
-                {current.authors.map((authorName, index) => <div className={classes.tag}><img src={current.tagImg[index]} alt="Logo Img" /> {authorName}</div>)}
+        <div className={`${classes.main} ${theme.theme === "dark" ? classes.dark : ""}`} style={{ "--accent-color": current.color }}>
+            <div className={classes.names}>
+                {/* {current.authors.map((authorName, index) => <div key={index} className={classes.tag}><img src={current.tagImg[index]} alt="Logo Img" /> {authorName}</div>)} */}
+                <div className={classes.name}><img src={current.authorImg} alt="Logo Img" />{current.author}</div>
             </div>
             <div className={classes.imgDiv}>
                 <img src={current.image} alt="" />
