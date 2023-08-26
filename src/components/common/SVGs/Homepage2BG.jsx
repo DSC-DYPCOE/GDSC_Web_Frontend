@@ -13,7 +13,7 @@ const Homepage2BG = () => {
                     // "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .6)", 
                     }}> */}
             {/* </div > */}
-        <svg width="1536" height="720" viewBox="0 0 1536 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg style={{position: "absolute", left: 0 , top: 0, objectFit: "contain",}}viewBox="0 0 1536 720" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1516_127)">
                 <ellipse cx="764.5" cy="660.5" rx="20.5" ry="21.5" fill="#14B25F" />
                 <ellipse cx="1286.5" cy="720" rx="30.5" ry="30" fill="#F74037" />
