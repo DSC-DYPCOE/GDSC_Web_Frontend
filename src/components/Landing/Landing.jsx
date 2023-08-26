@@ -10,8 +10,10 @@ import LandingBG from "../common/LandingBackground/LandingBG";
 import backsvg from '../../assets/homepage.svg'
 import HomepageBG from "../common/SVGs/HomepageBG";
 import Homepage2BG from "../common/SVGs/Homepage2BG";
-import {delay, motion} from 'framer-motion'
+import { delay, motion } from 'framer-motion'
 import { Transition } from "react-spring";
+// import HomePageBG2 from "../HomePageBG/HomePageBG";
+
 const Landing = () => {
   const theme = useContext(ThemeContext)
   const [x1, setX1] = useState("")
@@ -29,15 +31,15 @@ const Landing = () => {
 
   const item = {
     visible: {
-      opacity:1, y :0,
+      opacity: 1, y: 0,
       transition: {
         type: "spring",
         damping: 12,
         stiffness: 100,
       }
     },
-    hidden:{
-      opacity:0, y :20,
+    hidden: {
+      opacity: 0, y: 20,
       transition: {
         type: "spring",
         damping: 12,
@@ -47,10 +49,10 @@ const Landing = () => {
   };
 
   const container = {
-    hidden:{opacity:0},
+    hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: {staggerChildren: 0.12, delayChildren: 0.04 * 1}
+      transition: { staggerChildren: 0.12, delayChildren: 0.04 * 1 }
     })
 
   };
@@ -63,14 +65,14 @@ const Landing = () => {
 
   useEffect(() => {
 
-    if (window.screen.width <= 768){
+    if (window.screen.width <= 768) {
       setMobileView(true)
     }
 
     if (!intervalId && window.scrollY < 500) {
-        // setInterval(() => {
-        // Generate a random number.
-        // generateRandomNumber(0, 0, 1350, 500);
+      // setInterval(() => {
+      // Generate a random number.
+      // generateRandomNumber(0, 0, 1350, 500);
       // }, 500)
     }
 
@@ -89,29 +91,30 @@ const Landing = () => {
   }, []);
   return (
     <>
-      <div className={classes.cubes}>
+      {/* <HomePageBG2 /> */}
+      {/* <div className={classes.cubes}> */}
         {/* <img src={backsvg} /> */}
         {!mobileView && <Homepage2BG />}
         {/* <Cube id="paint0_linear_11_7" top={x1} left={y1} startColor="#4285F4" stopColor="#0F9D58" /> */}
         {/* <Cube id="paint0_linear_11_7" top={x1} left={y1} startColor="#4285F4" stopColor="#0F9D58" /> */}
         {/* <Cube id="paint0_linear_11_7" top={x1} left={y1} startColor="#4285F4" stopColor="#0F9D58" /> */}
-      </div>
+      {/* </div> */}
       <div className={`${classes.mainContainer} ${theme.theme === "dark" ? classes.dark : ""}`}>
         <div className={classes.mainLockup}>
           <img src={logo} alt="Main Logo" />
-          <motion.h1 style={{textAlign:"center", overflow:"hidden", display:"flex"}}
+          <motion.h1 style={{ textAlign: "center", overflow: "hidden", display: "flex" }}
             className="load-screen--message"
-            variants={container}           
+            variants={container}
             initial="hidden"
             animate="visible"
           >{
               m.map((e) => {
                 return <motion.span
-                variants={item}
-                style={{marginRight:(e === " ")?"10px" : "0px"}}
+                  variants={item}
+                  style={{ marginRight: (e === " ") ? "10px" : "0px" }}
                 >{e}</motion.span>
               })
-          }</motion.h1>
+            }</motion.h1>
           <h3>D. Y. Patil College of Engineering</h3>
           <Button label={<Link to="https://gdsc.community.dev/dy-patil-college-of-engineering-pune/" target="_blank" style={{ textDecoration: "none", color: "#fff" }}>Join Community</Link>} padding="0.75em 1.2em" margin="10px 0px" />
         </div>
