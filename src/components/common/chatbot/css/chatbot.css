@@ -245,7 +245,9 @@
   z-index: 4;
   background: none;
   color: #090909;
-  outline: none
+  outline: none;
+  color: #888;
+  font-weight: 600;
 }
 
 

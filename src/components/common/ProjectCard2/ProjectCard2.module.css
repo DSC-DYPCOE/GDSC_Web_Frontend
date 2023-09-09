@@ -59,6 +59,7 @@
 
 .infoDiv{
     /* border: blue 2px solid; */
+    position: relative;
     display: flex;
     justify-content: space-between;
     /* gap: 20px; */
@@ -99,6 +100,9 @@
 }
 
 .btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;

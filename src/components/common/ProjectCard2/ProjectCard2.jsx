@@ -1,10 +1,8 @@
 import React, { useContext, useEffect } from 'react'
 import classes from './ProjectCard2.module.css'
 import Button from '../Button/Button'
-import image from '../../../assets/projectBg.png'
 import { Link } from 'react-router-dom'
 import LinkIcon from '../SVGs/Link'
-import GithubIcon from '../SVGs/Github'
 import { ThemeContext } from '../../../App'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -31,11 +29,8 @@ const ProjectCard2 = ({ current }) => {
                 <div className={classes.infoDiv}>
                     <div className={classes.info}>
                         <h2>{current.projectName}
-                            <Link to={current.liveLink} target='_blank'>
+                            <Link to={current.liveLink ?  current.liveLink : current.githubLink} target='_blank'>
                                 <LinkIcon color={current.color} />
-                            </Link>
-                            <Link to={current.githubLink} target='_blank'>
-                                <GithubIcon color={current.color} />
                             </Link>
                         </h2>
                         <h4>{current.type}</h4>
