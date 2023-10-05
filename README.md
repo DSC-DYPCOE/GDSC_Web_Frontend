@@ -1,2 +1,2 @@
 # GDSC Web Frontend
-This Porject is now Open Source 
+This Project is now Open Source 
