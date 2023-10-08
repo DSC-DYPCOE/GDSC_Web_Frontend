@@ -50,6 +50,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 3%;
+    z-index: 3;
 }
 
 .sponsor {
@@ -107,12 +108,13 @@
 }
 
 .insisemail {
-    margin-top: 120px;
+    margin-top: 125px;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 80%;
 }
 
 .pques {
@@ -160,7 +162,6 @@
     /* height: 450px; */
     height: fit-content;
     align-self: flex-start;
-    margin-left: -10%;
     background-color: #ffffff;
     border-radius: 52px;
     box-shadow: 7px -7px 4px rgba(0, 0, 0, 0.25);
@@ -368,6 +369,7 @@
     .talk {
         font-size: 15px;
         line-height: 20px;
+        width: 85%;
     }
 
     .sponsorbtn {
